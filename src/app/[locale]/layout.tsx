@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 import { Inter, Poppins } from "next/font/google";
+import "../globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,15 +35,18 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
+  const messages = await getMessages();
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang={locale} suppressHydrationWarning={true}>
       <body className={`${inter.variable} ${poppins.variable} antialiased font-inter bg-background text-foreground min-h-screen`}>
-        {children}
+        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
   );
