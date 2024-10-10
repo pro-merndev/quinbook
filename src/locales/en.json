@@ -7,6 +7,13 @@
     "login": "Log In"
   },
   "Common": {
-    "demo_request": "Request a Demo"
+    "demo_request": "Request a Demo",
+    "contact": "Contact"
+  },
+  "Home": {
+    "banner": {
+      "title": "The All-In-One Booking & Management Package",
+      "description": "THE management solution for leisure providers - born in the escape room industry."
+    }
   }
 }
