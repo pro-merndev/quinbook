@@ -1,3 +1,12 @@
 {
-  "hello": "Hello, world!"
+  "NavLink": {
+    "functions": "Functions",
+    "pricing": "Pricing",
+    "news": "News",
+    "about": "About Us",
+    "login": "Log In"
+  },
+  "Common": {
+    "demo_request": "Request a Demo"
+  }
 }

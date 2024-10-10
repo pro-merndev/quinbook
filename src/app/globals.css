@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --background: #fffdfc;
-  --foreground: #000000;
   --grey-main: #f5f1f1;
   --grey-dark: #cbcbcb;
   --grey-darker: #707070;
@@ -21,4 +19,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }

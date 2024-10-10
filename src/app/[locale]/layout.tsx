@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Inter, Poppins } from "next/font/google";
 import "../globals.css";
+import HomeLayout from "@/components/layout/HomeLayout";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -46,7 +47,9 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning={true}>
       <body className={`${inter.variable} ${poppins.variable} antialiased font-inter bg-background text-foreground min-h-screen`}>
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <HomeLayout>{children}</HomeLayout>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

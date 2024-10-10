@@ -3,7 +3,7 @@ const config = {
     { label: "English", value: "en" },
     { label: "German", value: "de" },
   ],
-  defaultLanguage: "en",
+  defaultLanguage: "de",
 };
 
 export default config;
