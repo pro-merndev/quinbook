@@ -21,7 +21,27 @@
     },
     "advantages": {
       "badge": "Advantages",
-      "title": "Quinbook is..."
+      "title": "Quinbook is...",
+      "items": {
+        "_1": {
+          "title": "pure experience",
+          "description": "10 years of know-how in the escape game business & 25 years of IT knowledge"
+        },
+        "_2": {
+          "title": "a complex system that is very easy to use",
+          "description": "Tens of functions tailored to leisure operators. Let Quinbook do the work for you"
+        },
+        "_3": {
+          "title": "concentrated (wo)manpower",
+          "description": "A strong team of escape game operators, software developers and marketing specialists creates the unique mix that makes Quinbook the most powerful booking system for leisure providers"
+        }
+      },
+      "cta": {
+        "title": "fair!",
+        "descriptionLine1": "Flat rate! No hidden costs or percentages.",
+        "descriptionLine2": "REAL pricing planning, no additional fees!",
+        "actionText": "Request a demo"
+      }
     }
   },
   "Pricing": {
