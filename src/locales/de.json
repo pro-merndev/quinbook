@@ -8,12 +8,31 @@
   },
   "Common": {
     "demo_request": "Demo anfordern",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "learn_more": "Mehr erfahren"
   },
   "Home": {
     "banner": {
       "title": "Das All-In-One Buchungs- & Managementpaket",
       "description": "DIE Management Lösung für Freizeitanbieter - geboren in der Escape Room Branche."
+    }
+  },
+  "Pricing": {
+    "banner": {
+      "title": "QUALITÄT MUSS NICHT TEUER SEIN",
+      "description": "- bei uns gibt es keine versteckten Kosten!"
+    }
+  },
+  "News": {
+    "banner": {
+      "title": "News",
+      "description": "Lorem ipsum dolor sit amet consectetur. Faucibus ultricies et condimentum mi.Convallis id lectus aliquam aenean duis."
+    }
+  },
+  "About": {
+    "banner": {
+      "title": "wer wir sind",
+      "description": "Wir haben unsere Wurzeln selbst bei Escape Rooms und blicken auf Jahrzehnte Erfahrung in der Softwareentwicklung zurück."
     }
   }
 }

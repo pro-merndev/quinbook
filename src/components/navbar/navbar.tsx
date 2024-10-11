@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 const Navbar = () => {
   const t = useTranslations("Common");
   return (
-    <nav className="fixed top-12 left-0 right-0 z-50">
+    <nav className="fixed top-12 left-0 right-0 z-50 px-2">
       <div
         className="bg-primary-lighter rounded-[20px] px-3 py-1.5 flex items-center justify-between max-w-5xl mx-auto"
         style={{
@@ -17,7 +17,8 @@ const Navbar = () => {
       >
         {/* Logo */}
         <Link href="/">
-          <Image src="/logo/logo.svg" alt="QuinBook Logo" width={200} height={60} priority />
+          <Image src="/logo/logo.svg" alt="QuinBook Logo" width={200} height={60} priority className="hidden sm:block" />
+          <Image src="/logo/logo_icon.svg" alt="QuinBook Logo" width={46} height={46} priority className="block sm:hidden" />
         </Link>
 
         {/* Navigation Links */}
