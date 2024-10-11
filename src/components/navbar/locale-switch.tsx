@@ -25,29 +25,29 @@ const LocaleSwitch = () => {
   };
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
+    // <DropdownMenu>
+    //   <DropdownMenuTrigger asChild>
         <Button size="icon" variant="ghost" className="rounded-full p-1 size-8">
           <Image src={`/flags/${currentLocale}.svg`} alt={currentLocale} width={21} height={15} priority />
         </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-40">
-        <DropdownMenuLabel>Select Language</DropdownMenuLabel>
-        {config.localLanguages.map(({ label, value }) => (
-          <DropdownMenuItem
-            key={value}
-            onClick={() => handleChangeLanguage(value)}
-            className={cn(
-              value === currentLocale ? "bg-primary-lighter text-primary" : "text-foreground",
-              "font-semibold gap-2 cursor-pointer py-2"
-            )}
-          >
-            <Image src={`/flags/${value}.svg`} alt={currentLocale} width={21} height={15} priority />
-            <span>{label}</span>
-          </DropdownMenuItem>
-        ))}
-      </DropdownMenuContent>
-    </DropdownMenu>
+      // </DropdownMenuTrigger>
+      // <DropdownMenuContent className="w-40">
+      //   <DropdownMenuLabel>Select Language</DropdownMenuLabel>
+      //   {config.localLanguages.map(({ label, value }) => (
+      //     <DropdownMenuItem
+      //       key={value}
+      //       onClick={() => handleChangeLanguage(value)}
+      //       className={cn(
+      //         value === currentLocale ? "bg-primary-lighter text-primary" : "text-foreground",
+      //         "font-semibold gap-2 cursor-pointer py-2"
+      //       )}
+      //     >
+      //       <Image src={`/flags/${value}.svg`} alt={currentLocale} width={21} height={15} priority />
+      //       <span>{label}</span>
+      //     </DropdownMenuItem>
+      //   ))}
+      // </DropdownMenuContent>
+    // </DropdownMenu>
   );
 };
 
