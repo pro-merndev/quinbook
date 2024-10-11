@@ -15,6 +15,13 @@
     "banner": {
       "title": "The All-In-One Booking & Management Package",
       "description": "THE management solution for leisure providers - born in the escape room industry."
+    },
+    "marque": {
+      "title": "Trusted by 100+ customers"
+    },
+    "advantages": {
+      "badge": "Advantages",
+      "title": "Quinbook is..."
     }
   },
   "Pricing": {
