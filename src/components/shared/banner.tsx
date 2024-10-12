@@ -17,7 +17,7 @@ const Banner: FC<IProps> = ({ title, description, button, className }) => {
       <div className="flex flex-col items-center justify-center text-center">
         <h1
           className={cn(
-            "text-4xl md:text-5xl lg:text-[72px] lg:leading-[90px] mb-4 font-poppins font-black uppercase",
+            "text-3xl sm:text-4xl md:text-5xl lg:text-[72px] lg:leading-[90px] mb-4 font-poppins font-black uppercase",
             title?.length > 30 ? "max-w-4xl" : "max-w-3xl"
           )}
         >
