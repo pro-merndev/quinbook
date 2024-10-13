@@ -67,6 +67,25 @@
     "banner": {
       "title": "Funktionen & Features",
       "description": "Eine Buchungslösung allein greift nicht weit genug, um den stressigen Freizeit Business Alltag zu bewältigen"
+    },
+    "services": {
+      "_1": {
+        "title": "Personal & Buchhaltung",
+        "description": "Mitarbeiterverwaltung und automatisierte Buchhaltung - alles an einem Ort."
+      },
+      "_2": {
+        "title": "Marketing & Kampagnen",
+        "description": "Erstelle Kampagnen und E-Mail-Marketing mit nur wenigen Klicks."
+      },
+      "_3": {
+        "title": "Bildbearbeitung",
+        "description": "Bilder bearbeiten und automatisch versenden - schnell und einfach."
+      },
+      "_4": {
+        "title": "Customer Relationship Management - Alles vereint",
+        "description": "Verwalte deine Kundenbeziehungen und optimiere alle Prozesse in einem einzigen Tool. Mit Quinbook hast du alles im Griff!",
+        "btn": "Jetzt Quinbook kostenlos testen"
+      }
     }
   }
 }

@@ -67,6 +67,25 @@
     "banner": {
       "title": "Functions & Features",
       "description": "A booking solution alone is not enough to cope with the stressful everyday life of leisure and business"
+    },
+    "services": {
+      "_1": {
+        "title": "Personnel & Accounting",
+        "description": "Employee management and automated accounting - all in one place."
+      },
+      "_2": {
+        "title": "Marketing & Campaigns",
+        "description": "Create campaigns and email marketing with just a few clicks."
+      },
+      "_3": {
+        "title": "Image Editing",
+        "description": "Edit images and send them automatically - quickly and easily."
+      },
+      "_4": {
+        "title": "Customer Relationship Management - All in one",
+        "description": "Manage your customer relationships and optimize all processes in a single tool. With Quinbook, you have everything under control!",
+        "btn": "Try Quinbook for free now"
+      }
     }
   }
 }

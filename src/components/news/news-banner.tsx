@@ -7,7 +7,7 @@ const NewsBanner = () => {
   const commonT = useTranslations("Common");
 
   return (
-    <div className="container">
+    <div className="container pb-16 lg:pb-[100px]">
       <Banner title={t("title")} description={t("description")} button={<PrimaryButton>{commonT("contact")}</PrimaryButton>} />
     </div>
   );
