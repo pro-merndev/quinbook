@@ -1,4 +1,4 @@
-const generateFeatureItems = (t: any, featureCount: number, itemNumber: number) => {
+export const generateFeatureItems = (t: any, featureCount: number, itemNumber: number) => {
   const features = Array.from({ length: featureCount }).map((_, i) => t(`_${itemNumber}.f_${i + 1}` as any));
   return features;
 };

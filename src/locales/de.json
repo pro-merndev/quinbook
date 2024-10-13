@@ -128,6 +128,59 @@
         "f_1": "Editor & Engine für Outdoor Games, Schnitzeljagden und Touren",
         "f_2": "Hier kommt etwas Großes! Coming Soon!"
       }
+    },
+    "item_details": {
+      "_1": {
+        "title": "Erlebnis management",
+        "description": "Behalte den Überblick:",
+        "f_1": "Webbasierte Nutzung auf PC/MAC, Tablet und Smartphone",
+        "f_2": "Tages-/Wochen-/Monatsübersicht mit allen Räumen",
+        "f_3": "Team Foto per Mail verschicken",
+        "f_4": "Kunden- und Lieferantenverwaltung",
+        "f_5": "Aufgaben- und Erinnerungsfunktion",
+        "f_6": "Slotbemerkung und Notizverwaltung",
+        "f_7": "Auflistung zuletzt erstellter Notizen",
+        "f_8": "VoIP-Telefonintegration",
+        "f_9": "Eigener E-Mailversand mit Zustellinformationen und abfrage",
+        "f_10": "CRM: Kundenprofile zur Nachverfolgung",
+        "f_11": "Wetterbericht: Bereite dich auf Regentage mit Gruppenansturm vor"
+      },
+      "_2": {
+        "title": "Buchungssystem",
+        "description": "Bleibe flexibel:",
+        "f_1": "Standorte und Räume anlegen und verwalten",
+        "f_2": "Alle Räume/Spiele werden in einer Darstellung übersichtlich angezeigt",
+        "f_3": "Nicht nur feste Buchungen, sondern auch Reservierungen mit 'Ablaufdatum' möglich",
+        "f_4": "Räume stornieren, umbuchen und blockieren",
+        "f_5": "Exklusive und Public Slots",
+        "f_6": "Einfache Terminplanung & Verwaltung",
+        "f_7": "Preisfindung für Staffel- oder Festpreise mit Zeiträumen",
+        "f_8": "Bestellübersicht und -statistik",
+        "f_9": "Integrierter Webshop mit Warenkorbfunktion und gleichzeitiger Ansicht aller Räume",
+        "f_10": "Kampagnenverwaltung und Affiliate-Programm",
+        "f_11": "Gutscheinverwaltung und Verkauf",
+        "f_12": "Individuelle Erinnerungen per E-Mail durch einen Regelassistenten",
+        "f_13": "Feiertage individuell einstellen für mehr Slots",
+        "f_14": "White Labeling",
+        "f_15": "Google Analyticsverknüpfung",
+        "f_16": "Newsletter Opt-In (DSGVO Konform)",
+        "f_17": "Mehrsprachigkeit"
+      },
+      "_3": {
+        "title": "Personal management",
+        "description": "Koordiniere einfach deine Mitarbeiter:",
+        "f_1": "Mitarbeiterverwaltung mit detaillierten Berechtigungen",
+        "f_2": "Schichtplanung mit Urlaub- und Krankmeldungen",
+        "f_3": "Schichttauschfunktion",
+        "f_4": "Verfügbarkeitsverwaltung von Mitarbeitern",
+        "f_5": "Digitale Zeiterfassung mitsamt Pausefunktion und Abgleich zu Schichten",
+        "f_6": "Personalakte",
+        "f_7": "Synchronisation mit externen Kalendern per iCal: Schichten, Slots und Buchungen",
+        "f_8": "Aufgabenverwaltung und Zuweisung",
+        "f_9": "Neuigkeiten-Blog",
+        "f_10": "Mitarbeiterdatenbank",
+        "f_11": "Tracking: Bei wem ist was schiefgegangen, welche Gruppe war bei wem?"
+      }
     }
   }
 }
