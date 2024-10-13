@@ -1,7 +1,7 @@
 {
   "NavLink": {
     "home": "Home",
-    "functions": "Functions",
+    "features": "Features",
     "pricing": "Pricing",
     "news": "News",
     "about": "About Us",
@@ -61,6 +61,12 @@
     "banner": {
       "title": "Who We Are",
       "description": "We have our roots in escape rooms and can look back on decades of experience in software development."
+    }
+  },
+  "Features": {
+    "banner": {
+      "title": "Functions & Features",
+      "description": "A booking solution alone is not enough to cope with the stressful everyday life of leisure and business"
     }
   }
 }

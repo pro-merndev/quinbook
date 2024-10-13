@@ -24,7 +24,14 @@ const Banner: FC<IProps> = ({ title, description, button, className }) => {
           >
             {title}
           </h1>
-          <p className={cn("text-lg lg:text-2xl", description?.length > 100 ? "max-w-4xl" : "max-w-xl")}>{description}</p>
+          <p
+            className={cn(
+              "text-lg lg:text-2xl",
+              description?.length > 80 ? "max-w-3xl" : description?.length > 50 ? "max-w-2xl" : "max-w-xl"
+            )}
+          >
+            {description}
+          </p>
           {button && <div className="mt-10">{button}</div>}
         </div>
       </div>

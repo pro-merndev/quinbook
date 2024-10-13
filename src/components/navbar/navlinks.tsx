@@ -10,8 +10,8 @@ const NavLinks = () => {
 
   const links = [
     {
-      label: t("functions"),
-      path: "/functions",
+      label: t("features"),
+      path: "/features",
     },
     {
       label: t("pricing"),
