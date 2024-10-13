@@ -5,6 +5,7 @@ import HomeFeatures from "@/components/home/home-features";
 import HomeMarque from "@/components/home/home-marque";
 import HomeQuote from "@/components/home/home-quote";
 import HomeSolutions from "@/components/home/home-solutions";
+import HomeTestimonial from "@/components/home/home-testimonial";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <HomeQuote />
       <HomeFeatures />
       <HomeSolutions />
+      <HomeTestimonial/>
     </>
   );
 }
