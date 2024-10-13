@@ -12,7 +12,7 @@ export default function Home() {
       <HomeBanner />
       <HomeMarque />
       <HomeAdvantages />
-      {/* <HomeApplicationExample /> */}
+      <HomeApplicationExample />
       <HomeQuote />
       <HomeFeatures />
       <HomeSolutions />
