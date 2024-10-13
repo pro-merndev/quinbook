@@ -128,6 +128,59 @@
         "f_1": "Editor & engine for outdoor games, scavenger hunts, and tours.",
         "f_2": "Something big is coming here! Coming soon!"
       }
+    },
+    "item_details": {
+      "_1": {
+        "title": "Experience Management",
+        "description": "Stay organized:",
+        "f_1": "Web-based use on PC/MAC, tablet, and smartphone",
+        "f_2": "Daily/weekly/monthly overview with all rooms",
+        "f_3": "Send team photo by email",
+        "f_4": "Customer and supplier management",
+        "f_5": "Task and reminder function",
+        "f_6": "Slot remark and note management",
+        "f_7": "List of the most recently created notes",
+        "f_8": "VoIP telephone integration",
+        "f_9": "Own email dispatch with delivery information and query",
+        "f_10": "CRM: Customer profiles for tracking",
+        "f_11": "Weather report: Prepare for rainy days with group rush"
+      },
+      "_2": {
+        "title": "Booking System",
+        "description": "Stay flexible:",
+        "f_1": "Create and manage locations and rooms",
+        "f_2": "All rooms/games are clearly displayed in one view",
+        "f_3": "Not only fixed bookings but also reservations with 'expiration date' possible",
+        "f_4": "Cancel, rebook, and block rooms",
+        "f_5": "Exclusive and public slots",
+        "f_6": "Easy appointment planning & management",
+        "f_7": "Pricing for tiered or fixed prices with time periods",
+        "f_8": "Order overview and statistics",
+        "f_9": "Integrated webshop with shopping cart function and simultaneous view of all rooms",
+        "f_10": "Campaign management and affiliate program",
+        "f_11": "Voucher management and sales",
+        "f_12": "Individual reminders by email through a rule assistant",
+        "f_13": "Set holidays individually for more slots",
+        "f_14": "White labeling",
+        "f_15": "Google Analytics integration",
+        "f_16": "Newsletter opt-in (GDPR compliant)",
+        "f_17": "Multilingualism"
+      },
+      "_3": {
+        "title": "Personnel Management",
+        "description": "Easily coordinate your employees:",
+        "f_1": "Employee management with detailed permissions",
+        "f_2": "Shift planning with vacation and sick leave notifications",
+        "f_3": "Shift swap function",
+        "f_4": "Employee availability management",
+        "f_5": "Digital time tracking including pause function and shift matching",
+        "f_6": "Personnel file",
+        "f_7": "Synchronization with external calendars via iCal: shifts, slots, and bookings",
+        "f_8": "Task management and assignment",
+        "f_9": "News blog",
+        "f_10": "Employee database",
+        "f_11": "Tracking: Who made a mistake, which group was with whom?"
+      }
     }
   }
 }
