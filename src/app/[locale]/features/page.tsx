@@ -1,3 +1,4 @@
+import FeaturesItems from "@/components/features/features-items";
 import FeaturesBanner from "@/components/features/features-banner";
 import FeaturesServices from "@/components/features/features-services";
 
@@ -6,6 +7,7 @@ const FunctionsPage = () => {
     <>
       <FeaturesBanner />
       <FeaturesServices />
+      <FeaturesItems />
     </>
   );
 };

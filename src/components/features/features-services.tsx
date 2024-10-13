@@ -6,7 +6,7 @@ const FeaturesServices = () => {
   const t = useTranslations("Features.services");
 
   return (
-    <section className="pb-12 lg:pb-[100px] container">
+    <section className="container pb-16 lg:pb-[100px]">
       <div className="grid grid-cols-12 gap-6 mt-10">
         {[1, 2, 3].map((i) => (
           <div

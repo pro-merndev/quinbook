@@ -86,6 +86,48 @@
         "description": "Manage your customer relationships and optimize all processes in a single tool. With Quinbook, you have everything under control!",
         "btn": "Try Quinbook for free now"
       }
+    },
+    "items": {
+      "badge": "Features",
+      "title": "The Quinbook Formula",
+      "_1": {
+        "title": "Experience Management",
+        "description": "The daily business routine stirs up countless troubles and questions:",
+        "description_2": "QuinBook offers you the solution!",
+        "f_1": "When are the customers coming?",
+        "f_2": "Was something special agreed with the customer?",
+        "f_3": "Has the team photo already been sent?",
+        "f_4": "Is something broken in the room?"
+      },
+      "_2": {
+        "title": "Digital Booking System",
+        "f_1": "Never double-book or forget to follow up on reservations again.",
+        "f_2": "Automatic voucher dispatch included - with YOUR individual graphics.",
+        "f_3": "Statistics that motivate you to drive your business forward.",
+        "f_4": "Individual email, campaign, and marketing management.",
+        "f_5": "No security retention with our external payment providers."
+      },
+      "_3": {
+        "title": "Personnel Management",
+        "description": "No more external shift planners, email distributors, or Excel sheets: Employee coordination has never been so easy:",
+        "f_1": "Shift planning with vacation and sick leave notifications as well as swap function.",
+        "f_2": "Employee management with detailed permissions.",
+        "f_3": "Digital time tracking including breaks and matching to shifts.",
+        "f_4": "Internal communication made easy through our task management and news blog.",
+        "f_5": "Tracking: Which slot was created by whom and who managed which group?"
+      },
+      "_4": {
+        "title": "QuinGames",
+        "description": "Not just an editor, but an entire engine to easily create complete digital, browser-based point & click adventures without development knowledge:",
+        "f_1": "Editor with all functions.",
+        "f_2": "Engine with which customers can start & play the entire game directly on your website.",
+        "f_3": "Purchase processing directly and automatically integrated into Quinbook. Optionally, for a small fee (from 49 euros per month), also possible with other booking providers."
+      },
+      "_5": {
+        "title": "QuinTours",
+        "f_1": "Editor & engine for outdoor games, scavenger hunts, and tours.",
+        "f_2": "Something big is coming here! Coming soon!"
+      }
     }
   }
 }

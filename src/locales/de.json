@@ -86,6 +86,48 @@
         "description": "Verwalte deine Kundenbeziehungen und optimiere alle Prozesse in einem einzigen Tool. Mit Quinbook hast du alles im Griff!",
         "btn": "Jetzt Quinbook kostenlos testen"
       }
+    },
+    "items": {
+      "badge": "Funktionen",
+      "title": "Die quinbook formel",
+      "_1": {
+        "title": "Erlebnis Management",
+        "description": "Der Business Alltag wirbelt unzählige Troubles und Fragen auf:",
+        "description_2": "QuinBook bietet dir dazu die Lösung!",
+        "f_1": "Wann kommen die Kunden?",
+        "f_2": "Wurde etwas Besonderes mit dem Kunden vereinbart?",
+        "f_3": "Wurde das Team-Foto bereits verschickt?",
+        "f_4": "Ist etwas im Raum kaputt?"
+      },
+      "_2": {
+        "title": "Digitales Buchungssystem",
+        "f_1": "Nie wieder Doppelbuchungen oder vergessen, bei Reservierungen nachzuhaken.",
+        "f_2": "Automatischen Gutscheinversand gibt's obendrauf - mit DEINEN individuellen Grafiken.",
+        "f_3": "Statistiken, die dich motivieren dein Business voranzutreiben.",
+        "f_4": "Individuelles Mail-, Kampagnen und Marketing-Management.",
+        "f_5": "Kein Sicherheitsbehalt über unsere externen Zahlungsanbieter."
+      },
+      "_3": {
+        "title": "Personal Management",
+        "description": "Vorbei ist es mit den externen Schichtplanern, E-Mail Verteilern oder Excel-Tabellen: Mitarbeiter Koordination war noch nie so einfach:",
+        "f_1": "Schichtplanung mit Urlaub- und Krankmeldungen sowie Tauschfunktion.",
+        "f_2": "Mitarbeiterverwaltung mit detaillierten Berechtigungen.",
+        "f_3": "Digitale Zeiterfassung mitsamt Pausen und Abgleich zu den Schichten.",
+        "f_4": "Interne Kommunikation leicht gemacht über unsere Aufgabenverwaltung und News-Blog.",
+        "f_5": "Nachverfolgung: Welcher Slot wurde von wem angelegt und wer hat welche Gruppe Betreut?"
+      },
+      "_4": {
+        "title": "QuinGames",
+        "description": "Nicht nur ein Editor, sondern eine ganze Engine, um einfach und ohne Development Kenntnisse ganze digitale, browserbasierte Point & Click Adventures zu erstellen:",
+        "f_1": "Editor mit allen Funktionen.",
+        "f_2": "Engine mit der Kunden das gesamte Spiel auf deiner Website direkt starten & spielen können.",
+        "f_3": "Kaufabwicklung direkt und automatisiert in Quinbook integriert. Auf Wunsch gegen eine kleine Gebühr (ab 49 Euro pro Monat) auch bei anderen Buchungsanbietern möglich."
+      },
+      "_5": {
+        "title": "QuinTours",
+        "f_1": "Editor & Engine für Outdoor Games, Schnitzeljagden und Touren",
+        "f_2": "Hier kommt etwas Großes! Coming Soon!"
+      }
     }
   }
 }
