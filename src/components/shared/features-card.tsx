@@ -13,10 +13,10 @@ const FeaturesCard = ({ feature }: { feature: IFeature }) => {
         </div>
       </div>
       <div>
-        <h5 className="font-poppins font-extrabold md:text-4xl text-3xl md:leading-[54px] leading-10 pb-4">{feature.title}</h5>
-        <p className="text-2xl leading-7">{feature.description}</p>
+        <h5 className="font-poppins font-extrabold md:text-4xl text-3xl md:leading-[54px] leading-10 pb-4 max-md:text-center">{feature.title}</h5>
+        <p className="text-2xl leading-7 max-md:text-center">{feature.description}</p>
         {feature?.action && (
-          <div className="mt-8">
+          <div className="mt-8 max-md:flex max-md:justify-center max-md:items-center">
             <PrimaryButton>Unsere Preise</PrimaryButton>
           </div>
         )}
