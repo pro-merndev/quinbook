@@ -182,5 +182,16 @@
         "f_11": "Tracking: Who made a mistake, which group was with whom?"
       }
     }
+  },
+  "Contact": {
+    "badge": "Contact",
+    "title": "Contact Us",
+    "description": "Want to know more about Quinbook? Let's talk!",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "btn": "Request Demo"
   }
 }

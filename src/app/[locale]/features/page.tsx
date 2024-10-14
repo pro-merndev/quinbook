@@ -4,6 +4,7 @@ import FeaturesServices from "@/components/features/features-services";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import FeaturesItemsDetails from "@/components/features/features-items-details";
+import Contact from "@/components/shared/contact";
 
 export const generateMetadata = async (): Promise<Metadata> => {
   const t = await getTranslations("Features.banner");
@@ -21,6 +22,7 @@ const FunctionsPage = () => {
       <FeaturesServices />
       <FeaturesItems />
       <FeaturesItemsDetails />
+      <Contact />
     </>
   );
 };

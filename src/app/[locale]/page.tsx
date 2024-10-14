@@ -8,6 +8,7 @@ import HomeQuote from "@/components/home/home-quote";
 import HomeSolutions from "@/components/home/home-solutions";
 import HomeTestimonial from "@/components/home/home-testimonial";
 import HomeThisIsUs from "@/components/home/home-this-is-us";
+import Contact from "@/components/shared/contact";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <HomeTestimonial />
       <HomeDemoVideo />
       <HomeThisIsUs />
+      <Contact className="pt-16 lg:pt-[100px]" />
     </>
   );
 }

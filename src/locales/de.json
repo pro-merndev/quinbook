@@ -182,5 +182,16 @@
         "f_11": "Tracking: Bei wem ist was schiefgegangen, welche Gruppe war bei wem?"
       }
     }
+  },
+  "Contact": {
+    "badge": "Kontakt",
+    "title": "Kontaktiere Uns",
+    "description": "Du willst mehr über Quinbook wissen? Lass uns reden!",
+    "first_name": "Vorname",
+    "last_name": "Nachname",
+    "email": "E-Mail",
+    "subject": "Betreff",
+    "message": "Nachricht",
+    "btn": "Demo anfordern"
   }
 }
