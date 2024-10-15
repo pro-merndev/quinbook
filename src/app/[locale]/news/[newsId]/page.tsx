@@ -2,7 +2,7 @@ import NewsBanner from "@/components/news/news-banner";
 import NewsMain from "@/components/news/news-main";
 import Contact from "@/components/shared/contact";
 
-const NewsPage = () => {
+const NewsDetailsPage = () => {
   return (
     <>
       <NewsBanner />
@@ -12,4 +12,4 @@ const NewsPage = () => {
   );
 };
 
-export default NewsPage;
+export default NewsDetailsPage;
