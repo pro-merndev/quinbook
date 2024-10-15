@@ -1,11 +1,11 @@
 "use client";
 import { ChevronRight } from "lucide-react";
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
-import PrimaryBadge from "../shared/primary-badge";
-import TestimonialCard from "../shared/testimonial-card";
+import PrimaryBadge from "../ui/primary-badge";
+import TestimonialCard from "../ui/testimonial-card";
 
-const ExtendedCarousel = () => {
+const Testimonials = () => {
   const ref = useRef<Slider>(null);
   const [slidesToShow, setSlidesToShow] = useState(3);
 
@@ -18,12 +18,12 @@ const ExtendedCarousel = () => {
       }
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Call handleResize initially in case the window size is already below 1024px
     handleResize();
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const nextSlide = () => {
@@ -90,4 +90,4 @@ const ExtendedCarousel = () => {
   );
 };
 
-export default ExtendedCarousel;
+export default Testimonials;

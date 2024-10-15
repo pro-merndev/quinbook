@@ -1,12 +1,12 @@
 "use client";
 
+import { Icons } from "@/components/ui/icons";
+import PrimaryBadge from "@/components/ui/primary-badge";
+import { featureItems } from "@/constants/features";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import PrimaryBadge from "@/components/shared/primary-badge";
-import { Icons } from "@/components/shared/icons";
-import PrimaryButton from "@/components/shared/primary-button";
-import { Link } from "@/i18n/routing";
-import { featureItems } from "@/constants/features";
+import PrimaryButton from "../ui/primary-button";
 
 const FeaturesItems = () => {
   const t = useTranslations("Features.items");

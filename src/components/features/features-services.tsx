@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
-import PrimaryButton from "@/components/shared/primary-button";
 import Image from "next/image";
+import PrimaryButton from "../ui/primary-button";
 
 const FeaturesServices = () => {
   const t = useTranslations("Features.services");

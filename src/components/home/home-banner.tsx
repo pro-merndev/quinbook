@@ -4,7 +4,7 @@ import Banner from "@/components/shared/banner";
 import { useTranslations } from "next-intl";
 import { useRef } from "react";
 import BannerImage from "@/components/shared/banner-image";
-import PrimaryButton from "@/components/shared/primary-button";
+import PrimaryButton from "@/components/ui/primary-button";
 
 const HomeBanner = () => {
   const t = useTranslations("Home.banner");

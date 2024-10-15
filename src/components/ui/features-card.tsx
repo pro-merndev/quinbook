@@ -17,7 +17,7 @@ const FeaturesCard = ({ feature }: { feature: IFeature }) => {
         <p className="text-2xl leading-7 max-md:text-center">{feature.description}</p>
         {feature?.action && (
           <div className="mt-8 max-md:flex max-md:justify-center max-md:items-center">
-            <PrimaryButton>Unsere Preise</PrimaryButton>
+            <PrimaryButton>{feature.action.text}</PrimaryButton>
           </div>
         )}
       </div>

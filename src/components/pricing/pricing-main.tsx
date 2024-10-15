@@ -1,7 +1,7 @@
 import { pricingPlans } from "@/constants/pricing-plans";
 import { Check } from "lucide-react";
 import { PricingPlanType } from "../interface/pricing-plan.interface";
-import PrimaryBadge from "../shared/primary-badge";
+import PrimaryBadge from "../ui/primary-badge";
 
 const PricingMain = () => {
   return (

@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
-import PrimaryBadge from "../shared/primary-badge";
-import PrimaryButton from "../shared/primary-button";
+import PrimaryBadge from "../ui/primary-badge";
+import PrimaryButton from "../ui/primary-button";
 
 const HomeAdvantages = () => {
   const t = useTranslations("Home.advantages");
@@ -12,7 +12,10 @@ const HomeAdvantages = () => {
       <h3 className="text-center font-poppins text-[42px] font-extrabold uppercase py-5">{t("title")}</h3>
       <div className="grid grid-cols-12 gap-6 mt-10">
         {[1, 2, 3].map((i) => (
-          <div key={i} className="lg:col-span-4 col-span-12 p-12 bg-white even:bg-grey-main rounded-3xl border border-grey-main hover:bg-grey-main transition-all duration-500 ">
+          <div
+            key={i}
+            className="lg:col-span-4 col-span-12 p-12 bg-white even:bg-grey-main rounded-3xl border border-grey-main hover:bg-grey-main transition-all duration-500 "
+          >
             <h6 className="font-poppins text-2xl font-extrabold">{t(`items._${i}.title` as any)}f</h6>
             <p className="text-xl pt-5 leading-8">{t(`items._${i}.description` as any)}f</p>
           </div>

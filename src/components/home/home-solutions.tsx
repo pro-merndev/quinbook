@@ -1,4 +1,5 @@
-import PrimaryButton from "../shared/primary-button";
+import PrimaryButton from "../ui/primary-button";
+
 
 const HomeSolutions = () => {
   return (
