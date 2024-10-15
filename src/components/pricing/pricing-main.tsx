@@ -22,7 +22,7 @@ const PricingMain = () => {
                   <h6 className="font-poppins font-extrabold text-3xl mb-6">{plan.title}</h6>
                   <ul className="flex flex-col gap-5">
                     {plan.features.map((feature, index) => (
-                      <li className="flex gap-3 items-center">
+                      <li key={index} className="flex gap-3 items-center">
                         <div>
                           <span className="p-1 bg-white rounded-full flex justify-center items-center">
                             <Check width={15} height={15} />
