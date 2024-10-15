@@ -2,8 +2,8 @@ import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import NavLinks from "./navlinks";
 import LocaleSwitch from "./locale-switch";
-import PrimaryButton from "../shared/primary-button";
 import { useTranslations } from "next-intl";
+import PrimaryButton from "../ui/primary-button";
 
 const Navbar = () => {
   const t = useTranslations("Common");

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PrimaryBadge from "../shared/primary-badge";
+import PrimaryBadge from "../ui/primary-badge";
 
 const HomeApplicationExample = () => {
   return (

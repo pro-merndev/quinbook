@@ -8,7 +8,7 @@ const brandImages = [
   "/images/home/marque/4.png"
 ];
 
-const HomeMarque = () => {
+const CustomersMarque = () => {
   const t = useTranslations("Home.marque");
 
   return (
@@ -27,4 +27,4 @@ const HomeMarque = () => {
   );
 };
 
-export default HomeMarque;
+export default CustomersMarque;

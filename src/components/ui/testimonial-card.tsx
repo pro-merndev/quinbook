@@ -9,7 +9,7 @@ const TestimonialCard = () => {
         </p>
         <div className="flex gap-2 items-center">
           <div>
-          <div className="w-16 h-16 rounded-full bg-[#C0ABE4]"></div>
+            <div className="w-16 h-16 rounded-full bg-[#C0ABE4]"></div>
           </div>
           <div>
             <p className="font-poppins font-extrabold">Chris Lattner</p>

@@ -1,11 +1,11 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { FC, useState } from "react";
-import PrimaryBadge from "./primary-badge";
 import { useTranslations } from "next-intl";
-import ContactInput from "./contact-input";
-import PrimaryButton from "./primary-button";
+import { FC, useState } from "react";
+import ContactInput from "../ui/contact-input";
+import PrimaryBadge from "../ui/primary-badge";
+import PrimaryButton from "../ui/primary-button";
 
 type ContactProps = {
   className?: string;
@@ -35,9 +35,7 @@ const Contact: FC<ContactProps> = ({ className }) => {
     <section id="contact" className={cn(className, "bg-white pb-16 lg:pb-[100px]")}>
       <div className="container max-w-4xl flex flex-col items-center justify-center">
         <PrimaryBadge>{t("badge")}</PrimaryBadge>
-        <h2
-          className={cn("text-3xl sm:text-4xl md:text-5xl lg:text-[72px] lg:leading-[108px] my-4 font-poppins font-extrabold capitalize")}
-        >
+        <h2 className={cn("text-3xl sm:text-4xl md:text-5xl lg:text-[72px] lg:leading-[108px] my-4 font-poppins font-extrabold capitalize")}>
           {t("title")}
         </h2>
         <p className="text-xl text-center">{t("description")}</p>

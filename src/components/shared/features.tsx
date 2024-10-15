@@ -1,8 +1,8 @@
 import { features } from "@/constants/home-features";
-import FeaturesCard from "../shared/features-card";
+import FeaturesCard from "../ui/features-card";
 import PrimaryBadge from "../ui/primary-badge";
 
-const PricingFeatures = () => {
+const Features = () => {
   return (
     <div className="container py-12 lg:py-20 overflow-hidden">
       <h5 className="flex justify-center items-center">
@@ -18,4 +18,4 @@ const PricingFeatures = () => {
   );
 };
 
-export default PricingFeatures;
+export default Features;
