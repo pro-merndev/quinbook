@@ -1,12 +1,12 @@
 "use client";
 
-import PrimaryButton from "@/components/shared/primary-button";
 import { Icons } from "@/components/ui/icons";
 import PrimaryBadge from "@/components/ui/primary-badge";
 import { featureItems } from "@/constants/features";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import PrimaryButton from "../ui/primary-button";
 
 const FeaturesItems = () => {
   const t = useTranslations("Features.items");

@@ -1,5 +1,5 @@
 import { features } from "@/constants/home-features";
-import FeaturesCard from "../shared/features-card";
+import FeaturesCard from "../ui/features-card";
 import PrimaryBadge from "../ui/primary-badge";
 
 const PricingFeatures = () => {

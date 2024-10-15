@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import Banner from "../shared/banner";
-import PrimaryButton from "../shared/primary-button";
 import Image from "next/image";
+import PrimaryButton from "../ui/primary-button";
 
 const FeaturesBanner = () => {
   const t = useTranslations("Features.banner");
