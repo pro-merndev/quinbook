@@ -5,7 +5,7 @@ import { ClassValue } from "clsx";
 import { FC, useRef } from "react";
 import { BannerPages } from "@/interface/common.interface";
 import { bannerImages } from "@/constants/banner";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useInView } from "framer-motion";
 
 type IProps = {
   title: string;
@@ -13,10 +13,11 @@ type IProps = {
   button?: React.ReactNode;
   className?: ClassValue;
   page?: BannerPages;
+  image?: string;
 };
 
-const Banner: FC<IProps> = ({ title, description, button, className, page }) => {
-  const imagePath = bannerImages.find((item) => item.page === page)?.image;
+const Banner: FC<IProps> = ({ title, description, button, className, page, image }) => {
+  const imagePath = image ?? bannerImages.find((item) => item.page === page)?.image ?? "";
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref as any,
@@ -24,6 +25,7 @@ const Banner: FC<IProps> = ({ title, description, button, className, page }) => 
   });
 
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "60%"]);
+  const isInView = useInView(ref, { once: true });
 
   return (
     <section ref={ref}>
@@ -55,9 +57,12 @@ const Banner: FC<IProps> = ({ title, description, button, className, page }) => 
       </div>
 
       {/* Banner Image */}
-      {page && (
+      {imagePath && (
         <div className="pt-12 lg:pt-16 w-full h-auto aspect-[1080/636] relative rounded-[24px] overflow-hidden">
           <motion.div
+            initial={{ scale: 1.5 }}
+            animate={{ scale: isInView ? 1 : 1.5 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
             style={{
               y,
               backgroundImage: `url(${imagePath})`,
