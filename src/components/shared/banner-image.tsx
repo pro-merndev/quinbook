@@ -27,7 +27,7 @@ const BannerImage: FC<BannerImageProps> = ({ wrapperRef, imagePath }) => {
           backgroundRepeat: "no-repeat",
           borderRadius: "24px",
         }}
-        className="absolute w-full h-full -top-[100px] -translate-y-1/2"
+        className="absolute w-full h-full -top-[100px]"
       ></motion.div>
     </div>
   );
