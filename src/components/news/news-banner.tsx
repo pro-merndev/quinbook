@@ -8,7 +8,7 @@ const NewsBanner = () => {
 
   return (
     <div className="container">
-      <Banner title={t("title")} description={t("description")} button={<PrimaryButton>Mehr erfahren</PrimaryButton>} />
+      <Banner title={t("title")} description={t("description")} button={<PrimaryButton>{commonT("learn_more")}</PrimaryButton>} />
     </div>
   );
 };

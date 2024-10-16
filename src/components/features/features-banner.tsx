@@ -1,28 +1,25 @@
-"use client";
-
 import { useTranslations } from "next-intl";
-import { useRef } from "react";
+
 import Banner from "../shared/banner";
-import BannerImage from "../shared/banner-image";
 import PrimaryButton from "../ui/primary-button";
+import { BannerPages } from "@/interface/common.interface";
 
 const FeaturesBanner = () => {
   const t = useTranslations("Features.banner");
   const commonT = useTranslations("Common");
-  const ref = useRef(null);
 
   return (
-    <div className="container pb-16 lg:pb-[100px]" ref={ref}>
+    <div className="container pb-16 lg:pb-[100px]">
       <Banner
         title={t("title")}
         description={t("description")}
+        page={BannerPages.FEATURES}
         button={
           <PrimaryButton contactButton bigOffset>
             {commonT("contact")}
           </PrimaryButton>
         }
       />
-      <BannerImage ref={ref} imagePath="/images/features/banner.png" />
     </div>
   );
 };
