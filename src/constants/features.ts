@@ -11,6 +11,7 @@ export const featureItems = (t: any) => {
       description_2: t("_1.description_2"),
       features: generateFeatureItems(t, 4, 1),
       image: "/images/features/feature_1.svg",
+      bannerImage: "/images/features/feature_1_banner.jpeg",
       slug: "experience-management",
     },
     {
@@ -18,6 +19,7 @@ export const featureItems = (t: any) => {
       features: generateFeatureItems(t, 5, 2),
       image: "/images/features/feature_2.svg",
       slug: "digital-booking-system",
+      bannerImage: "/images/features/feature_2_banner.jpeg",
     },
     {
       title: t("_3.title"),
@@ -25,6 +27,7 @@ export const featureItems = (t: any) => {
       features: generateFeatureItems(t, 5, 3),
       image: "/images/features/feature_3.svg",
       slug: "personal-management",
+      bannerImage: "/images/features/feature_3_banner.jpeg",
     },
     {
       title: t("_4.title"),
@@ -32,12 +35,14 @@ export const featureItems = (t: any) => {
       features: generateFeatureItems(t, 3, 4),
       image: "/images/features/feature_4.svg",
       slug: "quin-games",
+      bannerImage: "/images/features/feature_4_banner.jpeg",
     },
     {
       title: t("_5.title"),
       features: generateFeatureItems(t, 2, 5),
       image: "/images/features/feature_5.svg",
       slug: "quin-tours",
+      bannerImage: "/images/features/feature_4_banner.jpeg",
     },
   ];
 };

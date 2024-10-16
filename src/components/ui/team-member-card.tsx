@@ -1,7 +1,7 @@
-import { TeamMember } from "../interface/team-member.interface";
+import { TeamMember } from "../../interface/team-member.interface";
 import PrimaryBadge from "./primary-badge";
 
-const TeamMemberCard = ({teamMember}: {teamMember: TeamMember}) => {
+const TeamMemberCard = ({ teamMember }: { teamMember: TeamMember }) => {
   return (
     <div>
       <div className="bg-white rounded-3xl border border-grey-main p-6 sm:w-[350px]">

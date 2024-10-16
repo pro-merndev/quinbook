@@ -1,4 +1,4 @@
-import { IFeature } from "@/components/interface/feature.interface";
+import { IFeature } from "@/interface/feature.interface";
 
 export const features: IFeature[] = [
   {
@@ -41,4 +41,3 @@ export const features: IFeature[] = [
     },
   },
 ];
-

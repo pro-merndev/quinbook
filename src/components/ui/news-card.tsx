@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/routing";
-import { INews } from "../interface/news.interface";
+import { INews } from "../../interface/news.interface";
 
 const NewsCard = ({ news }: { news: INews }) => {
   return (

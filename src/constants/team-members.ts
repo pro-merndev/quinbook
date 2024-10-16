@@ -1,4 +1,4 @@
-import { TeamMember } from "@/components/interface/team-member.interface";
+import { TeamMember } from "@/interface/team-member.interface";
 
 export const TeamMembers: TeamMember[] = [
   {

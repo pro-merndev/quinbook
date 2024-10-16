@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IFeature } from "../interface/feature.interface";
+import { IFeature } from "../../interface/feature.interface";
 import PrimaryButton from "./primary-button";
 
 const FeaturesCard = ({ feature }: { feature: IFeature }) => {
