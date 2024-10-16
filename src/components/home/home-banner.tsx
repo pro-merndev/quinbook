@@ -18,7 +18,7 @@ const HomeBanner = () => {
         description={t("description")}
         button={<PrimaryButton contactButton>{commonT("contact")}</PrimaryButton>}
       />
-      <BannerImage wrapperRef={ref} imagePath="/images/home/banner.png" />
+      <BannerImage ref={ref} imagePath="/images/home/banner.png" />
     </div>
   );
 };

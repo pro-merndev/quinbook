@@ -14,7 +14,7 @@ const PricingBanner = () => {
   return (
     <div className="container pb-16 lg:pb-[100px]" ref={ref}>
       <Banner title={t("title")} description={t("description")} button={<PrimaryButton>{commonT("learn_more")}</PrimaryButton>} />
-      <BannerImage wrapperRef={ref} imagePath="/images/pricing/banner.png" />
+      <BannerImage ref={ref} imagePath="/images/pricing/banner.png" />
     </div>
   );
 };

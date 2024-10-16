@@ -22,7 +22,7 @@ const FeaturesBanner = () => {
           </PrimaryButton>
         }
       />
-      <BannerImage wrapperRef={ref} imagePath="/images/features/banner.png" />
+      <BannerImage ref={ref} imagePath="/images/features/banner.png" />
     </div>
   );
 };
