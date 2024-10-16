@@ -13,9 +13,9 @@ const FeatureDetailsBanner = ({slug}:{slug:string}) => {
   const commonT = useTranslations("Common");
   const ref = useRef(null);
   return (
-    <div className="container pb-16 lg:pb-[100px]">
+    <div className="container pb-16 lg:pb-[100px]" ref={ref}>
       <Banner title={feature?.title} description={feature?.description} button={<PrimaryButton contactButton>{commonT("learn_more")}</PrimaryButton>} />
-      <BannerImage wrapperRef={ref} imagePath={feature?.bannerImage as string} />
+      <BannerImage ref={ref} imagePath={feature?.image as string} />
     </div>
   );
 };
