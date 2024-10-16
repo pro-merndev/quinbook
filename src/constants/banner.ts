@@ -1,4 +1,4 @@
-import { BannerPages } from "@/components/interface/common.interface";
+import { BannerPages } from "@/interface/common.interface";
 
 export const bannerImages = [
   {

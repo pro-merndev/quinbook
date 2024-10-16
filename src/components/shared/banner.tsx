@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import { ClassValue } from "clsx";
 import { FC, useRef } from "react";
-import { BannerPages } from "../interface/common.interface";
+import { BannerPages } from "@/interface/common.interface";
 import { bannerImages } from "@/constants/banner";
 import { motion, useScroll, useTransform } from "framer-motion";
 

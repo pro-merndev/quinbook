@@ -15,7 +15,7 @@ const FeatureDetailsBanner = ({slug}:{slug:string}) => {
   return (
     <div className="container pb-16 lg:pb-[100px]">
       <Banner title={feature?.title} description={feature?.description} button={<PrimaryButton contactButton>{commonT("learn_more")}</PrimaryButton>} />
-      <BannerImage wrapperRef={ref} imagePath={feature?.bannerImage as string} />
+      <BannerImage ref={ref} imagePath={feature?.bannerImage as string} />
     </div>
   );
 };
