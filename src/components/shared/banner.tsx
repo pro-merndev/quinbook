@@ -6,6 +6,7 @@ import { FC, useRef } from "react";
 import { BannerPages } from "@/interface/common.interface";
 import { bannerImages } from "@/constants/banner";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import FadeIn from "../animation/fade-in";
 
 type IProps = {
   title: string;
@@ -35,23 +36,31 @@ const Banner: FC<IProps> = ({ title, description, button, className, page, image
       >
         <div>
           <div className="flex flex-col items-center justify-center text-center">
-            <h1
-              className={cn(
-                "text-3xl sm:text-4xl md:text-5xl lg:text-[72px] lg:leading-[90px] mb-4 font-poppins font-black uppercase",
-                title?.length > 30 ? "max-w-[950px]" : "max-w-3xl"
-              )}
-            >
-              {title}
-            </h1>
-            <p
-              className={cn(
-                "text-lg lg:text-2xl",
-                description?.length > 80 ? "max-w-3xl" : description?.length > 50 ? "max-w-2xl" : "max-w-xl"
-              )}
-            >
-              {description}
-            </p>
-            {button && <div className="mt-10">{button}</div>}
+            <FadeIn>
+              <h1
+                className={cn(
+                  "text-3xl sm:text-4xl md:text-5xl lg:text-[72px] lg:leading-[90px] mb-4 font-poppins font-black uppercase",
+                  title?.length > 30 ? "max-w-[950px]" : "max-w-3xl"
+                )}
+              >
+                {title}
+              </h1>
+            </FadeIn>
+            <FadeIn motionProps={{ transition: { delay: 0.3 } }}>
+              <p
+                className={cn(
+                  "text-lg lg:text-2xl",
+                  description?.length > 80 ? "max-w-3xl" : description?.length > 50 ? "max-w-2xl" : "max-w-xl"
+                )}
+              >
+                {description}
+              </p>
+            </FadeIn>
+            {button && (
+              <FadeIn motionProps={{ transition: { delay: 0.6 } }}>
+                <div className="mt-10">{button}</div>
+              </FadeIn>
+            )}
           </div>
         </div>
       </div>
