@@ -1,4 +1,4 @@
-import { INews } from "@/components/interface/news.interface";
+import { INews } from "@/interface/news.interface";
 
 export const news: INews[] = [
   {

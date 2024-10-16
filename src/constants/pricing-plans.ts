@@ -1,4 +1,4 @@
-import { IPricingPlan, PricingPlanType } from "@/components/interface/pricing-plan.interface";
+import { IPricingPlan, PricingPlanType } from "@/interface/pricing-plan.interface";
 
 export const pricingPlans: IPricingPlan[] = [
   {
