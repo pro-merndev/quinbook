@@ -16,7 +16,9 @@ const Features = () => {
       </FadeIn>
       <div className="pt-20 flex flex-col md:gap-36 gap-10">
         {features.map((feature, i) => (
-          <FeaturesCard key={i} feature={feature} />
+          <FadeIn key={i} direction={i % 2 === 0 ? "left" : "right"}>
+            <FeaturesCard index={i} feature={feature} />
+          </FadeIn>
         ))}
       </div>
     </div>
