@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PrimaryBadge from "../ui/primary-badge";
+import FadeIn from "../animation/fade-in";
 
 const HomeApplicationExample = () => {
   return (
@@ -9,12 +10,10 @@ const HomeApplicationExample = () => {
           <div className="w-full lg:min-h-[720px] lg:w-1/2 flex items-center">
             {/* Left side content, constrained by container */}
             <div className="flex justify-center items-center gap-10">
-              <div className="">
-                <div>
-                  <PrimaryBadge>Anwendungsbeispiele</PrimaryBadge>
-                </div>
+              <FadeIn direction="left">
+                <PrimaryBadge>Anwendungsbeispiele</PrimaryBadge>
                 <h3 className="font-poppins font-extrabold md:leading-[100px] md:text-7xl text-5xl pt-5">Für wen quinbook?</h3>
-              </div>
+              </FadeIn>
             </div>
           </div>
           <div className="w-full lg:w-1/2 lg:absolute lg:right-0 lg:top-0 lg:bottom-0">
