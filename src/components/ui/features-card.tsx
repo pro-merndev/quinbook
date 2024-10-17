@@ -1,8 +1,11 @@
+"use client";
+import { useRouter } from "@/i18n/routing";
 import Image from "next/image";
 import { IFeature } from "../../interface/feature.interface";
 import PrimaryButton from "./primary-button";
 
 const FeaturesCard = ({ feature }: { feature: IFeature }) => {
+  const router = useRouter();
   return (
     <div className="max-w-[900px] mx-auto flex md:even:flex-row-reverse max-md:flex-col justify-between items-center md:gap-28 gap-10">
       <div>
@@ -17,7 +20,9 @@ const FeaturesCard = ({ feature }: { feature: IFeature }) => {
         <p className="text-2xl leading-7 max-md:text-center">{feature.description}</p>
         {feature?.action && (
           <div className="mt-8 max-md:flex max-md:justify-center max-md:items-center">
-            <PrimaryButton>{feature.action.text}</PrimaryButton>
+            <PrimaryButton onClick={feature?.action ? () => router.push(feature?.action?.link as string) : undefined}>
+              {feature.action.text}
+            </PrimaryButton>
           </div>
         )}
       </div>

@@ -1,3 +1,4 @@
+"use client";
 import { useTranslations } from "next-intl";
 
 import Banner from "../shared/banner";
@@ -7,6 +8,19 @@ import { BannerPages } from "@/interface/common.interface";
 const FeaturesBanner = () => {
   const t = useTranslations("Features.banner");
   const commonT = useTranslations("Common");
+  const handleContact = () => {
+    const contact = document.getElementById("contact");
+    if (contact) {
+      const offset = 150; // Adjust the offset value as needed
+      const elementPosition = contact.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <div className="container pb-16 lg:pb-[100px]">
@@ -15,7 +29,7 @@ const FeaturesBanner = () => {
         description={t("description")}
         page={BannerPages.FEATURES}
         button={
-          <PrimaryButton contactButton bigOffset>
+          <PrimaryButton onClick={handleContact}>
             {commonT("contact")}
           </PrimaryButton>
         }

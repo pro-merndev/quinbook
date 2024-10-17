@@ -14,7 +14,7 @@ const PricingPage = () => {
       <PricingDescribe />
       <PricingPaymentMethods />
       <PricingFeatures />
-      <VideoBanner src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
+      <VideoBanner src="https://cdn.quinbook.com/media/quinbook_sneak_peek.m3u8" />
       <Contact className="pt-16 lg:pt-[100px]" />
     </>
   );

@@ -11,9 +11,22 @@ const FeatureDetailsBanner = ({slug}:{slug:string}) => {
   const feature = featureItems(t).find((s) => s.slug === slug);
   const commonT = useTranslations("Common");
   const ref = useRef(null);
+  const handleContact = () => {
+    const contact = document.getElementById("contact");
+    if (contact) {
+      const offset = 100; // Adjust the offset value as needed
+      const elementPosition = contact.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div className="container pb-16 lg:pb-[100px]" ref={ref}>
-      <Banner title={feature?.title} description={feature?.description} button={<PrimaryButton contactButton>{commonT("learn_more")}</PrimaryButton>} />
+      <Banner title={feature?.title} description={feature?.description} button={<PrimaryButton onClick={handleContact}>{commonT("learn_more")}</PrimaryButton>} />
       <BannerImage ref={ref} imagePath={feature?.bannerImage as string} />
     </div>
   );

@@ -1,6 +1,20 @@
+"use client";
 import PrimaryButton from "../ui/primary-button";
 
 const HomeThisIsUs = () => {
+  const handleContact = () => {
+    const contact = document.getElementById("contact");
+    if (contact) {
+      const offset = 100; // Adjust the offset value as needed
+      const elementPosition = contact.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div>
       <div className="bg-primary">
@@ -15,7 +29,7 @@ const HomeThisIsUs = () => {
               <PrimaryButton className="text-black bg-white" withArrow={false}>
                 Zu den Funktionen
               </PrimaryButton>
-              <PrimaryButton>Demo anfordern</PrimaryButton>
+              <PrimaryButton onClick={handleContact}>Demo anfordern</PrimaryButton>
             </div>
           </div>
         </div>

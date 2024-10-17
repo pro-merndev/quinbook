@@ -1,6 +1,6 @@
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 
 const FooterMain = () => {
   const t = useTranslations("NavLink");
@@ -20,13 +20,13 @@ const FooterMain = () => {
                 <Link href="/">{t("home")}</Link>
               </li>
               <li>
-                <Link href="/">{t("pricing")}</Link>
+                <Link href="/pricing">{t("pricing")}</Link>
               </li>
               <li>
-                <Link href="/">{t("news")}</Link>
+                <Link href="/news">{t("news")}</Link>
               </li>
               <li>
-                <Link href="/">{t("about")}</Link>
+                <Link href="/about">{t("about")}</Link>
               </li>
               <li>
                 <Link href="/">{t("login")}</Link>
@@ -60,10 +60,10 @@ const FooterMain = () => {
             <h6 className="text-sm pb-6 font-bold text-primary uppercase">Kontakt</h6>
             <ul className="flex flex-col gap-2">
               <li>
-                <Link href="/">+49 (0)40 22883-0</Link>
+                <a href="tel:+4940228830">+49 (0)40 22883-0</a>
               </li>
               <li>
-                <Link href="/">info@quinbook.com</Link>
+                <a href="mailto:info@quinbook.com">info@quinbook.com</a>
               </li>
             </ul>
           </div>

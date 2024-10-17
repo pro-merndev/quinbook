@@ -1,3 +1,4 @@
+"use client";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import NavLinks from "./navlinks";
@@ -7,6 +8,19 @@ import PrimaryButton from "../ui/primary-button";
 
 const Navbar = () => {
   const t = useTranslations("Common");
+  const handleContact = () => {
+    const contact = document.getElementById("contact");
+    if (contact) {
+      const offset = 150; // Adjust the offset value as needed
+      const elementPosition = contact.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <nav className="fixed top-12 left-0 right-0 z-50 px-2">
       <div
@@ -25,7 +39,7 @@ const Navbar = () => {
         <div className="flex items-center gap-6">
           <NavLinks />
           <LocaleSwitch />
-          <PrimaryButton>{t("demo_request")}</PrimaryButton>
+          <PrimaryButton onClick={handleContact}>{t("demo_request")}</PrimaryButton>
         </div>
       </div>
     </nav>

@@ -5,7 +5,7 @@ import PrimaryBadge from "../ui/primary-badge";
 
 const PricingMain = () => {
   return (
-    <div>
+    <section id="pricing">
       <div className="container">
         <h5 className="flex justify-center items-center">
           <PrimaryBadge>Preise</PrimaryBadge>
@@ -56,7 +56,7 @@ const PricingMain = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

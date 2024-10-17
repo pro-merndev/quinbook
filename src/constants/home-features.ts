@@ -37,7 +37,7 @@ export const features: IFeature[] = [
     icon: "/images/home/features/cash-payment-bills--Streamline-Ultimate.png",
     action: {
       text: "Unsere Preise",
-      link: "#",
+      link: "/pricing",
     },
   },
 ];

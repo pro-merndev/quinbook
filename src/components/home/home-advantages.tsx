@@ -1,9 +1,23 @@
+"use client";
 import { useTranslations } from "next-intl";
 import PrimaryBadge from "../ui/primary-badge";
 import PrimaryButton from "../ui/primary-button";
 
 const HomeAdvantages = () => {
   const t = useTranslations("Home.advantages");
+  const handleContact = () => {
+    const contact = document.getElementById("contact");
+    if (contact) {
+      const offset = 100; // Adjust the offset value as needed
+      const elementPosition = contact.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div className="container py-12 lg:py-20">
       <h5 className="flex justify-center items-center">
@@ -24,7 +38,7 @@ const HomeAdvantages = () => {
           <h4 className="font-poppins font-extrabold text-7xl pb-6">fair!</h4>
           <p className="text-2xl">Flatrate! Keine versteckten Kosten oder prozentualen Anteile.</p>
           <p className="text-2xl">ECHTE Preisplanung, keine zusätzlichen Gebühren!</p>
-          <PrimaryButton className="mt-8">Demo anfordern</PrimaryButton>
+          <PrimaryButton onClick={handleContact} className="mt-8">Demo anfordern</PrimaryButton>
         </div>
       </div>
     </div>

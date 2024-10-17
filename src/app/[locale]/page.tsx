@@ -21,7 +21,7 @@ export default function Home() {
       <Features />
       <HomeSolutions />
       <Testimonials />
-      <VideoBanner src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
+      <VideoBanner src="https://cdn.quinbook.com/media/quinbook_sneak_peek.m3u8" />
       <HomeThisIsUs />
       <Contact className="pt-16 lg:pt-[100px]" />
     </>

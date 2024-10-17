@@ -4,7 +4,7 @@ import TeamMemberCard from "../ui/team-member-card";
 
 const AboutTeam = () => {
   return (
-    <div className="container">
+    <div id="team-member" className="container">
       <h5 className="flex justify-center items-center">
         <PrimaryBadge>Das team</PrimaryBadge>
       </h5>
