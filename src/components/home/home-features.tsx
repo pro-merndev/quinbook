@@ -1,6 +1,7 @@
 import { features } from "@/constants/home-features";
 import PrimaryBadge from "../ui/primary-badge";
 import FeaturesCard from "../ui/features-card";
+import FadeIn from "../animation/fade-in";
 
 const HomeFeatures = () => {
   return (
@@ -11,7 +12,9 @@ const HomeFeatures = () => {
       <h3 className="text-center font-poppins text-[42px] font-extrabold uppercase py-5">Die Quinboosts</h3>
       <div className="pt-20 flex flex-col md:gap-36 gap-10">
         {features.map((feature, i) => (
-          <FeaturesCard key={i} feature={feature} />
+          <FadeIn key={i} direction={i % 2 === 0 ? "left" : "right"}>
+            <FeaturesCard index={i} feature={feature} />
+          </FadeIn>
         ))}
       </div>
     </div>
