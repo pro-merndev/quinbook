@@ -46,7 +46,7 @@ const Banner: FC<IProps> = ({ title, description, button, className, page, image
                 {title}
               </h1>
             </FadeIn>
-            <FadeIn motionProps={{ transition: { delay: 0.3 } }}>
+            <FadeIn delay={0.3}>
               <p
                 className={cn(
                   "text-lg lg:text-2xl",
@@ -57,7 +57,7 @@ const Banner: FC<IProps> = ({ title, description, button, className, page, image
               </p>
             </FadeIn>
             {button && (
-              <FadeIn motionProps={{ transition: { delay: 0.6 } }}>
+              <FadeIn delay={0.6}>
                 <div className="mt-10">{button}</div>
               </FadeIn>
             )}

@@ -1,7 +1,7 @@
 import { FC, ReactNode, useRef } from "react";
 import { motion, MotionProps, useInView } from "framer-motion";
 
-type FadeInProps = {
+type FadeOutProps = {
   children: ReactNode;
   className?: string;
   motionProps?: MotionProps;
@@ -9,30 +9,30 @@ type FadeInProps = {
   direction?: "up" | "down" | "left" | "right";
 };
 
-const getInitialFadeIn = (direction: "up" | "down" | "left" | "right") => {
+const getInitialFadeOut = (direction: "up" | "down" | "left" | "right") => {
   switch (direction) {
     case "up":
-      return { opacity: 0, y: 100 };
+      return { opacity: 1, y: 0 };
     case "down":
-      return { opacity: 0, y: -100 };
+      return { opacity: 1, y: 0 };
     case "left":
-      return { opacity: 0, x: 100 };
+      return { opacity: 1, x: 0 };
     case "right":
-      return { opacity: 0, x: -100 };
+      return { opacity: 1, x: 0 };
     default:
-      return { opacity: 0 };
+      return { opacity: 1 };
   }
 };
 
-const FadeIn: FC<FadeInProps> = ({ children, className, delay = 0, direction = "up", motionProps }) => {
+const FadeOut: FC<FadeOutProps> = ({ children, className, delay = 0, direction = "up", motionProps }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
     <motion.div
       ref={ref}
-      initial={getInitialFadeIn(direction)}
-      animate={{ opacity: isInView ? 1 : 0, x: 0, y: 0 }}
+      initial={getInitialFadeOut(direction)}
+      animate={{ opacity: isInView ? 0 : 1, x: 0, y: 0 }}
       transition={{ duration: 0.5, ease: "easeIn", delay }}
       className={className}
       {...motionProps}
@@ -42,4 +42,4 @@ const FadeIn: FC<FadeInProps> = ({ children, className, delay = 0, direction = "
   );
 };
 
-export default FadeIn;
+export default FadeOut;
