@@ -1,15 +1,13 @@
 "use client";
 import Banner from "@/components/shared/banner";
 import PrimaryButton from "@/components/ui/primary-button";
-import { featureItems } from "@/constants/features";
+import { featureDetailsItems } from "@/constants/features";
 import { useTranslations } from "next-intl";
-import { useRef } from "react";
 
 const FeatureDetailsBanner = ({ slug }: { slug: string }) => {
-  const t = useTranslations("Features.items");
-  const feature = featureItems(t).find((s) => s.slug === slug);
+  const t = useTranslations();
+  const feature = featureDetailsItems(t).find((s) => s.slug === slug);
   const commonT = useTranslations("Common");
-  const ref = useRef(null);
   const handleContact = () => {
     const contact = document.getElementById("contact");
     if (contact) {
@@ -27,8 +25,8 @@ const FeatureDetailsBanner = ({ slug }: { slug: string }) => {
   return (
     <div className="container pb-16 lg:pb-[100px]">
       <Banner
-        title={feature?.title}
-        description={feature?.description}
+        title={feature?.title as string}
+        description={feature?.subTitle as string}
         image={feature?.bannerImage}
         button={<PrimaryButton onClick={handleContact}>{commonT("learn_more")}</PrimaryButton>}
       />

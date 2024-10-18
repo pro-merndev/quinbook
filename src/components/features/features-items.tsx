@@ -1,5 +1,4 @@
 "use client";
-
 import { Icons } from "@/components/ui/icons";
 import PrimaryBadge from "@/components/ui/primary-badge";
 import { featureItems } from "@/constants/features";
@@ -42,9 +41,13 @@ const FeaturesItems = () => {
               </div>
               {item?.description_2 && <p className="text-lg font-normal mt-3">{item?.description_2}</p>}
               <div className="mt-10">
-                <Link href={`/features/${item?.slug}`}>
+                {item.slug === "quin-games" || item.slug === "quin-tours" ? (
                   <PrimaryButton>{commonT("learn_more")}</PrimaryButton>
-                </Link>
+                ) : (
+                  <Link href={`/features/${item?.slug}`}>
+                    <PrimaryButton>{commonT("learn_more")}</PrimaryButton>
+                  </Link>
+                )}
               </div>
             </div>
             <div className="px-[50px] py-[100px] rounded-3xl bg-grey-main h-full grid place-items-center">

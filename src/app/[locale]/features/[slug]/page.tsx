@@ -3,7 +3,7 @@ import FeatureDetailsMain from "@/components/features-details/feature-details-ma
 import Contact from "@/components/shared/contact";
 import Features from "@/components/shared/features";
 import VideoBanner from "@/components/shared/video-banner";
-import { featureItems } from "@/constants/features";
+import { featureDetailsItems, featureItems } from "@/constants/features";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
@@ -16,9 +16,9 @@ interface Params {
 export const generateMetadata = async ({ params }: Params): Promise<Metadata> => {
   const { slug } = params;
   const t = await getTranslations("Features.items");
-  const item = featureItems(t)?.find((s) => s.slug === slug);
+  const item = featureDetailsItems(t)?.find((s) => s.slug === slug);
 
-  return { title: item?.title, description: item?.description };
+  return { title: item?.title, description: item?.subTitle };
 };
 
 const FeaturesDetailsPage = ({ params }: Params) => {
@@ -26,7 +26,7 @@ const FeaturesDetailsPage = ({ params }: Params) => {
   return (
     <>
       <FeatureDetailsBanner slug={slug} />
-      <FeatureDetailsMain />
+      <FeatureDetailsMain slug={slug} />
       <Features />
       <VideoBanner src="https://cdn.quinbook.com/media/quinbook_sneak_peek.m3u8" />
       <Contact className="pt-16 lg:pt-[100px]" />
