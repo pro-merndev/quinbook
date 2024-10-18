@@ -22,7 +22,7 @@ const FunctionsPage = () => {
       <FeaturesServices />
       <FeaturesItems />
       <FeaturesItemsDetails />
-      <Contact />
+      <Contact  className="pt-16 lg:pt-[100px]" />
     </>
   );
 };
