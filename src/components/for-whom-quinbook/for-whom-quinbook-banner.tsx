@@ -1,3 +1,5 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import Banner from "../shared/banner";
 import PrimaryButton from "../ui/primary-button";
@@ -22,7 +24,7 @@ const ForWhomQuinbookBanner = () => {
       <Banner
         title="FÜR WEN QUINBOOK?"
         description="Business Management einfach gemacht:  Optimiere deinen Workflow"
-        image="/images/features/feature_4_banner.jpeg"
+        image="/images/for-whom-quinbook/banner.jpeg"
         button={<PrimaryButton onClick={handleScroll}>{commonT("learn_more")}</PrimaryButton>}
       />
     </div>
