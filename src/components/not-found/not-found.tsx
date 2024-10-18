@@ -1,6 +1,3 @@
-import { Link } from "@/i18n/routing";
-import React from "react";
-
 const NotFound = () => {
   const styles = {
     oopss: {
@@ -58,10 +55,9 @@ const NotFound = () => {
         <img src="https://cdn.rawgit.com/ahmedhosna95/upload/1731955f/sad404.svg" alt="404" style={styles.img} />
         <span style={styles.span as any}>404 PAGE</span>
         <p style={styles.pA}>. The page you were looking for could not be found</p>
-
-        <Link href="/" style={styles.back}>
+        <a href="/" style={styles.back}>
           ... Back to home page
-        </Link>
+        </a>
       </div>
     </div>
   );
