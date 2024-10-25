@@ -10,8 +10,33 @@
   "Common": {
     "demo_request": "Demo anfordern",
     "contact": "Kontakt",
+    "features": "Funktionen",
     "learn_more": "Mehr erfahren"
   },
+  "CommonSection" : {
+    "Features": {
+      "title": "The Quinboosts",
+      "items": {
+        "_1": {
+          "title": "Kundenbeziehungs-management (CRM)",
+          "description": "Nie wieder Doppelbuchungen dank erstklassiger Kommunikationstools, um Kunden gezielt wieder abzuholen."
+        },
+        "_2": {
+          "title": "Marketing & Campaigns",
+          "description": "Create campaigns and email marketing with just a few clicks."
+        },
+        "_3": {
+          "title": "Image Editing",
+          "description": "Edit images and send them automatically - quickly and easily."
+        },
+        "_4": {
+          "title": "Customer Relationship Management - All in one",
+          "description": "Manage your customer relationships and optimize all processes in a single tool. With Quinbook, you have everything under control!",
+          "btn": "Try Quinbook for free now"
+        }
+      }
+    }
+  } ,
   "Home": {
     "banner": {
       "title": "Das All-In-One Buchungs- & Managementpaket",
@@ -43,6 +68,19 @@
         "descriptionLine2": "ECHTE Preisplanung, keine zusätzlichen Gebühren!",
         "actionText": "Demo anfordern"
       }
+    } ,
+    "example" : {
+      "badge" : "Anwendungsbeispiele" ,
+      "title" : "Für wen quinbook?", 
+      "items": {
+        "_1": "Lasertag" ,
+        "_2": "Escape Rooms" ,
+        "_3": "Minigolf" ,
+        "_4": "Museen, Schlösser & Naturparks"
+      }
+    },
+    "quote": {
+      "title": "...einfach für alle Freizeitanbieter"
     }
   },
   "Pricing": {

@@ -1,8 +1,11 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import PrimaryBadge from "../ui/primary-badge";
 import FadeIn from "../animation/fade-in";
+import PrimaryBadge from "../ui/primary-badge";
 
 const HomeApplicationExample = () => {
+  const t = useTranslations("Home.example");
+  const items = [t("items._1"), t("items._2"), t("items._3"), t("items._4")];
   return (
     <div className="relative min-h-[720px] max-lg:mb-10">
       <div className="container mx-auto px-4">
@@ -11,8 +14,8 @@ const HomeApplicationExample = () => {
             {/* Left side content, constrained by container */}
             <div className="flex justify-center items-center gap-10">
               <FadeIn direction="left">
-                <PrimaryBadge>Anwendungsbeispiele</PrimaryBadge>
-                <h3 className="font-poppins font-extrabold md:leading-[100px] md:text-7xl text-5xl pt-5">Für wen quinbook?</h3>
+                <PrimaryBadge>{t("badge")}</PrimaryBadge>
+                <h3 className="font-poppins font-extrabold md:leading-[100px] md:text-7xl text-5xl pt-5">{t("title")}</h3>
               </FadeIn>
             </div>
           </div>
@@ -20,7 +23,7 @@ const HomeApplicationExample = () => {
             {/* Right side content, extends to viewport edge */}
             <div className="h-full">
               <div className="bg-primary md:py-40 py-10 md:px-12 px-5 max-lg:rounded-2xl">
-                {["Lasertag", "Escape Rooms", "Minigolf", "Museen, Schlösser & Naturparks"].map((item, i) => (
+                {items.map((item, i) => (
                   <div key={i} className="mb-9">
                     <div className="flex gap-3 items-center ">
                       <div className="bg-white rounded-xl p-5 w-full max-w-[600px] h-16">

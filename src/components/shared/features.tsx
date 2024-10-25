@@ -1,14 +1,16 @@
 import { features } from "@/constants/home-features";
+import { useTranslations } from "next-intl";
+import FadeIn from "../animation/fade-in";
 import FeaturesCard from "../ui/features-card";
 import PrimaryBadge from "../ui/primary-badge";
-import FadeIn from "../animation/fade-in";
 
 const Features = () => {
+  const t = useTranslations("Common");
   return (
     <div className="container py-12 lg:py-20 overflow-hidden">
       <FadeIn>
         <h5 className="flex justify-center items-center">
-          <PrimaryBadge>Funktionen</PrimaryBadge>
+          <PrimaryBadge>{t("features")}</PrimaryBadge>
         </h5>
       </FadeIn>
       <FadeIn>

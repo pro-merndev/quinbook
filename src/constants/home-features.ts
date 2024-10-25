@@ -1,5 +1,7 @@
 import { IFeature } from "@/interface/feature.interface";
 
+// const 
+
 export const features: IFeature[] = [
   {
     title: "Kundenbeziehungs-management (CRM)",

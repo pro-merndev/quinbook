@@ -1,8 +1,8 @@
 "use client";
 import { useTranslations } from "next-intl";
+import FadeIn from "../animation/fade-in";
 import PrimaryBadge from "../ui/primary-badge";
 import PrimaryButton from "../ui/primary-button";
-import FadeIn from "../animation/fade-in";
 
 const HomeAdvantages = () => {
   const t = useTranslations("Home.advantages");
@@ -19,6 +19,7 @@ const HomeAdvantages = () => {
       });
     }
   };
+
   return (
     <div className="container py-12 lg:py-20">
       <FadeIn>
@@ -43,10 +44,12 @@ const HomeAdvantages = () => {
         ))}
         <FadeIn className="col-span-12" delay={2 * 0.2}>
           <div className="p-12 rounded-3xl border border-grey-dark bg-grey-main">
-            <h4 className="font-poppins font-extrabold text-7xl pb-6">fair!</h4>
-            <p className="text-2xl">Flatrate! Keine versteckten Kosten oder prozentualen Anteile.</p>
-            <p className="text-2xl">ECHTE Preisplanung, keine zusätzlichen Gebühren!</p>
-            <PrimaryButton onClick={handleContact} className="mt-8">Demo anfordern</PrimaryButton>
+            <h4 className="font-poppins font-extrabold text-7xl pb-6">{t("cta.title")}</h4>
+            <p className="text-2xl">{t("cta.descriptionLine1")}</p>
+            <p className="text-2xl">{t("cta.descriptionLine2")}</p>
+            <PrimaryButton onClick={handleContact} className="mt-8">
+              {t("cta.actionText")}
+            </PrimaryButton>
           </div>
         </FadeIn>
       </div>
