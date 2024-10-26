@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Icons } from "../ui/icons";
+import FadeIn from "../animation/fade-in";
 
 const methodsItems = [
   "Direkter Zahlungsverkehr mit externen Zahlungsanbietern",
@@ -20,14 +21,16 @@ const PricingPaymentMethods = () => {
               <h5 className="font-poppins font-extrabold sm:text-[42px] text-3xl">Unsere Zahlungsarten</h5>
               <div className="mt-6 flex flex-col gap-3">
                 {methodsItems.map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="width-6">
-                      <div className="grid place-items-center bg-primary rounded-full p-1 size-6">
-                        <Icons.arrowRight2 className="size-3 text-white" />
+                  <FadeIn key={index} delay={index * 0.2}>
+                    <div className="flex items-start gap-3">
+                      <div className="width-6">
+                        <div className="grid place-items-center bg-primary rounded-full p-1 size-6">
+                          <Icons.arrowRight2 className="size-3 text-white" />
+                        </div>
                       </div>
+                      <div className="text-[20px] leading-7 ">{item}</div>
                     </div>
-                    <div className="text-[20px] leading-7 ">{item}</div>
-                  </div>
+                  </FadeIn>
                 ))}
               </div>
             </div>
