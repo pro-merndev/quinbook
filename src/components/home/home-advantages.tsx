@@ -35,7 +35,7 @@ const HomeAdvantages = () => {
           <FadeIn key={i} delay={i * 0.2} distance={(i + 1) * 50} className="lg:col-span-4 col-span-12" direction="up">
             <div
               key={i}
-              className="h-full p-12 bg-white even:bg-grey-main rounded-3xl border border-grey-main hover:bg-grey-main transition-all duration-500 "
+              className="h-full p-8 lg:p-12 bg-white even:bg-grey-main rounded-3xl border border-grey-main hover:bg-grey-main transition-all duration-500 "
             >
               <h6 className="font-poppins text-2xl font-extrabold">{t(`items._${i}.title` as any)}f</h6>
               <p className="text-xl pt-5 leading-8">{t(`items._${i}.description` as any)}f</p>
@@ -43,7 +43,7 @@ const HomeAdvantages = () => {
           </FadeIn>
         ))}
         <FadeIn className="col-span-12" delay={2 * 0.2}>
-          <div className="p-12 rounded-3xl border border-grey-dark bg-grey-main">
+          <div className="p-8 lg:p-12 rounded-3xl border border-grey-dark bg-grey-main">
             <h4 className="font-poppins font-extrabold text-4xl lg:text-7xl pb-6">{t("cta.title")}</h4>
             <p className="text-xl lg:text-2xl">{t("cta.descriptionLine1")}</p>
             <p className="text-xl lg:text-2xl">{t("cta.descriptionLine2")}</p>
