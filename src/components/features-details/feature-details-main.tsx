@@ -13,7 +13,7 @@ const FeatureDetailsMain = ({ slug }: { slug: string }) => {
         {feature?.functions.map((item, index) => (
           <div key={index} className="md:grid md:grid-cols-2 md:min-h-[750px]">
             <FadeIn className="h-full">
-              <div className="flex justify-center items-center gap-10 h-full">
+              <div className="flex lg:justify-center items-center gap-10 h-full">
                 <div>
                   <div>
                     <PrimaryBadge>{item?.badge}</PrimaryBadge>

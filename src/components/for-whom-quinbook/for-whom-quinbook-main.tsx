@@ -14,7 +14,7 @@ const ForWhomQuinbookMain = () => {
                 <div>
                   <PrimaryBadge>{item?.badge}</PrimaryBadge>
                 </div>
-                <h3 className="font-poppins font-extrabold md:leading-[90px] md:text-7xl text-5xl pt-5">{item?.title}</h3>
+                <h3 className="font-poppins font-extrabold md:leading-[90px] md:text-7xl text-4xl pt-5">{item?.title}</h3>
                 <p className='text-xl leading-7 text-grey-darker mt-4'>{item?.description_1}</p>
                 {item?.description_2 && <p className='text-xl leading-7 text-grey-darker mt-4'>{item?.description_2}</p>}
               </div>
