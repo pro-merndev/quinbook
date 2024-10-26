@@ -1,39 +1,18 @@
 "use client";
 
+import { navLinks } from "@/constants/nav-links";
 import { Link, usePathname } from "@/i18n/routing";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 
 const NavLinks = () => {
-  const t = useTranslations("NavLink");
+  const t = useTranslations();
+  const featuresT = useTranslations("Features.items");
   const pathname = usePathname();
 
-  const links = [
-    {
-      label: t("features"),
-      path: "/features",
-    },
-    {
-      label: t("pricing"),
-      path: "/pricing",
-    },
-    {
-      label: t("news"),
-      path: "/news",
-    },
-    {
-      label: t("about"),
-      path: "/about",
-    },
-    {
-      label: t("login"),
-      path: "/login",
-    },
-  ];
-
   return (
-    <div className="hidden lg:flex items-center gap-6">
-      {links.map((link) => (
+    <div className="flex items-center gap-6">
+      {navLinks(t, featuresT).map((link) => (
         <Link
           key={link.path}
           href={link.path}

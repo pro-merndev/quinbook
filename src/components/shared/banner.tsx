@@ -67,7 +67,7 @@ const Banner: FC<IProps> = ({ title, description, button, className, page, image
 
       {/* Banner Image */}
       {imagePath && (
-        <div className="pt-12 lg:pt-16 w-full h-auto aspect-[1080/636] relative rounded-[24px] overflow-hidden">
+        <div className="pt-12 lg:pt-16 w-full h-auto aspect-[345/250] md:aspect-[1080/636] relative rounded-[24px] overflow-hidden">
           <motion.div
             initial={{ scale: 1.5 }}
             animate={{ scale: isInView ? 1 : 1.5 }}
@@ -80,7 +80,7 @@ const Banner: FC<IProps> = ({ title, description, button, className, page, image
               backgroundRepeat: "no-repeat",
               borderRadius: "24px",
             }}
-            className="absolute w-full h-full -top-[100px]"
+            className="absolute w-full h-full -top-[50px] md:-top-[100px]"
           ></motion.div>
         </div>
       )}

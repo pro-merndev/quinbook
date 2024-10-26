@@ -11,9 +11,10 @@
     "demo_request": "Request a Demo",
     "contact": "Contact",
     "features": "Features",
-    "learn_more": "Learn More"
+    "learn_more": "Learn More",
+    "for_whom": "QuinBook For Whom?"
   },
-  "CommonSection" : {
+  "CommonSection": {
     "Features": {
       "title": "The Quinboosts",
       "items": {
@@ -36,7 +37,7 @@
         }
       }
     }
-  } ,
+  },
   "Home": {
     "banner": {
       "title": "The All-In-One Booking & Management Package",
@@ -69,13 +70,13 @@
         "actionText": "Request a demo"
       }
     },
-    "example" : {
-      "badge" : "Application examples" ,
-      "title" : "Who is quinbook for?", 
+    "example": {
+      "badge": "Application examples",
+      "title": "Who is quinbook for?",
       "items": {
-        "_1": "Laser tag" ,
-        "_2": "Escape Rooms" ,
-        "_3": "Mini golf" ,
+        "_1": "Laser tag",
+        "_2": "Escape Rooms",
+        "_3": "Mini golf",
         "_4": "Museums, castles & nature parks"
       }
     },

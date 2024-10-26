@@ -47,7 +47,7 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale} suppressHydrationWarning={true}>
-      <body className={`${inter.variable} ${poppins.variable} antialiased font-inter bg-background text-foreground min-h-screen`}>
+      <body className={`${inter.variable} ${poppins.variable} antialiased font-inter bg-background text-foreground min-h-screen overflow-x-hidden`}>
         <NextIntlClientProvider messages={messages}>
           <HomeLayout>{children}</HomeLayout>
         </NextIntlClientProvider>
