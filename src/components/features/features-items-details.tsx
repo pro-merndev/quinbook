@@ -1,5 +1,6 @@
 import { generateFeatureItems } from "@/constants/features";
 import { useTranslations } from "next-intl";
+import FadeIn from "../animation/fade-in";
 
 const FeaturesItemsDetails = () => {
   const t = useTranslations("Features.item_details");
@@ -27,16 +28,20 @@ const FeaturesItemsDetails = () => {
       {data.map((item, index) => (
         <div key={index} className=" even:bg-grey-main">
           <div className="container py-16 lg:py-[100px]">
-            <h3 className="font-poppins text-4xl md:text-7xl lg:text-[100px] lg:leading-[90px] font-extrabold uppercase">{item.title}</h3>
-            {item.description && <p className="text-lg font-extrabold text-[#333] mt-6">{item.description}</p>}
+            <FadeIn>
+              <h3 className="font-poppins text-4xl md:text-7xl lg:text-[100px] lg:leading-[90px] font-extrabold uppercase">{item.title}</h3>
+              {item.description && <p className="text-lg font-extrabold text-[#333] mt-6">{item.description}</p>}
+            </FadeIn>
             <div className="flex flex-col gap-3 mt-3">
               {item.features?.map((feature, i) => (
-                <div key={i} className="flex items-center gap-3">
-                  <div className="w-[14px]">
-                    <div className="grid place-items-center bg-primary rounded-full size-[14px]"></div>
+                <FadeIn key={i} delay={i * 0.05}>
+                  <div className="flex items-center gap-3">
+                    <div className="w-[14px]">
+                      <div className="grid place-items-center bg-primary rounded-full size-[14px]"></div>
+                    </div>
+                    <p>{feature}</p>
                   </div>
-                  <p>{feature}</p>
-                </div>
+                </FadeIn>
               ))}
             </div>
           </div>

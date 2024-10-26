@@ -17,7 +17,7 @@ const NewsDetailsMain = ({ newsId }: { newsId: string }) => {
         </p>
       </FadeIn>
       <FadeIn>
-        <h1 className="font-poppins font-[900] text-[42px] mt-3 uppercase">Lorem ipsum dolor sit amet consectetur.</h1>
+        <h1 className="font-poppins font-[900] text-4xl lg:text-[42px] mt-3 uppercase">Lorem ipsum dolor sit amet consectetur.</h1>
       </FadeIn>
       <div className="py-6 lg:py-10">
         <ZoomIn>
