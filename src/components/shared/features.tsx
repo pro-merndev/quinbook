@@ -14,7 +14,7 @@ const Features = () => {
         </h5>
       </FadeIn>
       <FadeIn>
-        <h3 className="text-center font-poppins text-[42px] font-extrabold uppercase py-5">Die Quinboosts</h3>
+        <h3 className="text-center font-poppins text-4xl lg:text-[42px] font-extrabold uppercase py-5">Die Quinboosts</h3>
       </FadeIn>
       <div className="pt-20 flex flex-col md:gap-36 gap-10">
         {features.map((feature, i) => (

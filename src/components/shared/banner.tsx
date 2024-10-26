@@ -47,12 +47,7 @@ const Banner: FC<IProps> = ({ title, description, button, className, page, image
               </h1>
             </FadeIn>
             <FadeIn delay={0.3}>
-              <p
-                className={cn(
-                  "text-lg lg:text-2xl",
-                  description?.length > 80 ? "max-w-3xl" : description?.length > 50 ? "max-w-2xl" : "max-w-xl"
-                )}
-              >
+              <p className={cn("text-2xl", description?.length > 80 ? "max-w-3xl" : description?.length > 50 ? "max-w-2xl" : "max-w-xl")}>
                 {description}
               </p>
             </FadeIn>

@@ -54,8 +54,12 @@ const Testimonials = () => {
     <div className="py-12 lg:py-20">
       <div className="container">
         <FadeIn direction="left">
-          <PrimaryBadge>Testimonials</PrimaryBadge>
-          <h3 className="font-poppins text-[42px] font-extrabold uppercase py-5">Unsere Kunden sprechen für uns</h3>
+          <h5 className="text-center lg:text-left">
+            <PrimaryBadge>Testimonials</PrimaryBadge>
+          </h5>
+          <h3 className="text-center lg:text-leftfont-poppins text-4xl lg:text-[42px] font-extrabold uppercase py-5">
+            Unsere Kunden sprechen für uns
+          </h3>
         </FadeIn>
       </div>
       <div className="relative overflow-hidden">

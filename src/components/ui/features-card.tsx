@@ -21,16 +21,18 @@ const FeaturesCard = ({ feature, index }: FeaturesCardProps) => {
     >
       <div>
         <div>
-          <span className="flex justify-center items-center w-52 h-52 bg-grey-main rounded-full">
-            <Image src={feature.icon} alt="example-1" width={120} height={120} />
-          </span>
+          <div className="flex justify-center items-center size-[150px] md:size-52 bg-grey-main rounded-full">
+            <div className="size-[90px] md:size-30 relative">
+              <Image src={feature.icon} alt="example-1" fill />
+            </div>
+          </div>
         </div>
       </div>
       <div>
-        <h5 className="font-poppins font-extrabold md:text-4xl text-3xl md:leading-[54px] leading-10 pb-4 max-md:text-center">
+        <h5 className="font-poppins font-extrabold md:text-4xl text-2xl md:leading-[54px] leading-10 pb-4 max-md:text-center">
           {feature.title}
         </h5>
-        <p className="text-2xl leading-7 max-md:text-center">{feature.description}</p>
+        <p className="text-xl md:text-2xl leading-7 max-md:text-center">{feature.description}</p>
         {feature?.action && (
           <div className="mt-8 max-md:flex max-md:justify-center max-md:items-center">
             <PrimaryButton onClick={feature?.action ? () => router.push(feature?.action?.link as string) : undefined}>

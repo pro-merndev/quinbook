@@ -14,8 +14,12 @@ const HomeApplicationExample = () => {
             {/* Left side content, constrained by container */}
             <div className="flex justify-center items-center gap-10">
               <FadeIn direction="left">
-                <PrimaryBadge>{t("badge")}</PrimaryBadge>
-                <h3 className="font-poppins font-extrabold md:leading-[100px] md:text-7xl text-5xl pt-5">{t("title")}</h3>
+                <h5 className="text-center lg:text-left">
+                  <PrimaryBadge>{t("badge")}</PrimaryBadge>
+                </h5>
+                <h3 className="text-center lg:text-left font-poppins font-extrabold md:leading-[100px] md:text-7xl text-4xl pt-5">
+                  {t("title")}
+                </h3>
               </FadeIn>
             </div>
           </div>

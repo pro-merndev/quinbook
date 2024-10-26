@@ -44,9 +44,9 @@ const HomeAdvantages = () => {
         ))}
         <FadeIn className="col-span-12" delay={2 * 0.2}>
           <div className="p-12 rounded-3xl border border-grey-dark bg-grey-main">
-            <h4 className="font-poppins font-extrabold text-7xl pb-6">{t("cta.title")}</h4>
-            <p className="text-2xl">{t("cta.descriptionLine1")}</p>
-            <p className="text-2xl">{t("cta.descriptionLine2")}</p>
+            <h4 className="font-poppins font-extrabold text-4xl lg:text-7xl pb-6">{t("cta.title")}</h4>
+            <p className="text-xl lg:text-2xl">{t("cta.descriptionLine1")}</p>
+            <p className="text-xl lg:text-2xl">{t("cta.descriptionLine2")}</p>
             <PrimaryButton onClick={handleContact} className="mt-8">
               {t("cta.actionText")}
             </PrimaryButton>

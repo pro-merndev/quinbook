@@ -7,7 +7,7 @@ const FooterMain = () => {
   return (
     <div className="bg-grey-main py-16">
       <div className="container">
-        <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-6 justify-center text-center sm:justify-start sm:text-left">
           <div>
             <Link href="/">
               <Image src="/logo/logo.svg" alt="QuinBook Logo" width={200} height={60} priority className="" />

@@ -40,9 +40,7 @@ const Contact: FC<ContactProps> = ({ className }) => {
           <PrimaryBadge>{t("badge")}</PrimaryBadge>
         </FadeIn>
         <FadeIn>
-          <h2
-            className={cn("text-3xl sm:text-4xl md:text-5xl lg:text-[72px] lg:leading-[108px] my-4 font-poppins font-extrabold capitalize")}
-          >
+          <h2 className={cn("text-4xl md:text-5xl lg:text-[72px] lg:leading-[108px] my-4 font-poppins font-extrabold capitalize")}>
             {t("title")}
           </h2>
         </FadeIn>
