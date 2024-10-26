@@ -10,7 +10,7 @@ const HomeFeatures = () => {
         <PrimaryBadge>Funktionen</PrimaryBadge>
       </h5>
       <h3 className="text-center font-poppins text-[42px] font-extrabold uppercase py-5">Die Quinboosts</h3>
-      <div className="pt-20 flex flex-col md:gap-36 gap-10">
+      <div className="pt-20 flex flex-col md:gap-36 gap-10 overflow-hidden">
         {features.map((feature, i) => (
           <FadeIn key={i} direction={i % 2 === 0 ? "left" : "right"}>
             <FeaturesCard index={i} feature={feature} />

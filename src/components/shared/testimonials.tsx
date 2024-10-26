@@ -52,12 +52,12 @@ const Testimonials = () => {
 
   return (
     <div className="py-12 lg:py-20">
-      <div className="container">
+      <div className="container overflow-x-hidden">
         <FadeIn direction="left">
           <h5 className="text-center lg:text-left">
             <PrimaryBadge>Testimonials</PrimaryBadge>
           </h5>
-          <h3 className="text-center lg:text-leftfont-poppins text-4xl lg:text-[42px] font-extrabold uppercase py-5">
+          <h3 className="text-center lg:text-left font-poppins text-4xl lg:text-[42px] font-extrabold uppercase py-5">
             Unsere Kunden sprechen für uns
           </h3>
         </FadeIn>

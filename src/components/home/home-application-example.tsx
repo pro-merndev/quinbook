@@ -13,7 +13,7 @@ const HomeApplicationExample = () => {
           <div className="w-full lg:min-h-[720px] lg:w-1/2 flex items-center">
             {/* Left side content, constrained by container */}
             <div className="flex justify-center items-center gap-10">
-              <FadeIn direction="left">
+              <FadeIn>
                 <h5 className="text-center lg:text-left">
                   <PrimaryBadge>{t("badge")}</PrimaryBadge>
                 </h5>
