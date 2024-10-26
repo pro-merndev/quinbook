@@ -2,19 +2,27 @@
 import { news } from "@/constants/news";
 import { useRef } from "react";
 import BannerImage from "../shared/banner-image";
+import FadeIn from "../animation/fade-in";
+import ZoomIn from "../animation/zoom-in";
 
 const NewsDetailsMain = ({ newsId }: { newsId: string }) => {
   const thisNews = news.find((news) => news.id === Number(newsId));
   const ref = useRef(null);
   return (
     <div className="container py-12 lg:py-20">
-      <p className="mt-6 flex gap-6">
-        <span className="font-poppins uppercase font-extrabold text-primary text-xs">{thisNews?.type}</span>
-        <span className="font-medium text-grey-darker text-xs">{thisNews?.date}</span>
-      </p>
-      <h1 className="font-poppins font-[900] text-[42px] mt-3 uppercase">Lorem ipsum dolor sit amet consectetur.</h1>
+      <FadeIn>
+        <p className="mt-6 flex gap-6">
+          <span className="font-poppins uppercase font-extrabold text-primary text-xs">{thisNews?.type}</span>
+          <span className="font-medium text-grey-darker text-xs">{thisNews?.date}</span>
+        </p>
+      </FadeIn>
+      <FadeIn>
+        <h1 className="font-poppins font-[900] text-[42px] mt-3 uppercase">Lorem ipsum dolor sit amet consectetur.</h1>
+      </FadeIn>
       <div className="py-6 lg:py-10">
-        <BannerImage ref={ref} imagePath="/images/news/banner.jpeg" />
+        <ZoomIn>
+          <BannerImage ref={ref} imagePath="/images/news/banner.jpeg" />
+        </ZoomIn>
       </div>
       <div>
         <p className="text-xl mb-10">
@@ -50,7 +58,9 @@ const NewsDetailsMain = ({ newsId }: { newsId: string }) => {
         </p>
       </div>
       <div className="max-w-4xl py-6 lg:py-12 mx-auto">
-        <BannerImage ref={ref} imagePath="/images/news/banner.jpeg" />
+        <ZoomIn>
+          <BannerImage ref={ref} imagePath="/images/news/banner.jpeg" />
+        </ZoomIn>
       </div>
       <div>
         <p className="text-xl mb-10">
