@@ -34,13 +34,12 @@ const MobileNavItem: FC<MobileNavItemProps> = ({ link }) => {
       {link.items && link.items.length ? (
         <div className={cn(subMenuOpen ? "bg-primary/10" : "")}>
           <button
-            onClick={() => setSubMenuOpen(!subMenuOpen)}
             className={cn(
               "py-4 px-6 duration-200 transition-all w-full flex items-center justify-between hover:font-extrabold hover:bg-primary/10"
             )}
           >
-            <p className={cn(subMenuOpen ? "text-primary font-bold" : "")}>{link.label}</p>
-            <Icons.arrowDown className={cn("size-6 text-primary duration-200 transition-all", subMenuOpen ? "rotate-180" : "")} />
+            <Link href={link.path} className={cn(subMenuOpen ? "text-primary font-bold" : "")}>{link.label}</Link>
+            <Icons.arrowDown   onClick={() => setSubMenuOpen(!subMenuOpen)} className={cn("size-6 text-primary duration-200 transition-all", subMenuOpen ? "rotate-180" : "")} />
           </button>
           <AnimatePresence initial={false}>
             {subMenuOpen && (

@@ -6,10 +6,6 @@ export const navLinks = (t: any, featuresT: any) => {
       label: t("NavLink.features"),
       path: "/features",
       items: [
-        {
-          label: t("Features.banner.title"),
-          path: "/features",
-        },
         ...featureItems(featuresT)
           .slice(0, 3)
           .map((feature) => ({
