@@ -4,6 +4,8 @@ import Image from "next/image";
 
 const FooterMain = () => {
   const t = useTranslations("NavLink");
+  
+
   return (
     <div className="bg-grey-main py-16">
       <div className="container">
@@ -29,7 +31,7 @@ const FooterMain = () => {
                 <Link href="/about">{t("about")}</Link>
               </li>
               <li>
-                <Link href="/">{t("login")}</Link>
+                <Link href="/login">{t("login")}</Link>
               </li>
             </ul>
           </div>
@@ -37,7 +39,7 @@ const FooterMain = () => {
             <h6 className="text-sm pb-6 font-bold text-primary uppercase">Funktionen</h6>
             <ul className="flex flex-col gap-2">
               <li>
-                <Link href="/">Erlebnis Management</Link>
+                <Link href="/features/experience-management">Erlebnis Management</Link>
               </li>
               <li>
                 <Link href="/">Buchungssystem</Link>
@@ -49,10 +51,10 @@ const FooterMain = () => {
                 <Link href="/">Anwendungen</Link>
               </li>
               <li>
-                <Link href="/">QuinTours</Link>
+                <Link href="/features/quin-tours">QuinTours</Link>
               </li>
               <li>
-                <Link href="/">QuinGames</Link>
+                <Link href="/features/quin-games">QuinGames</Link>
               </li>
             </ul>
           </div>

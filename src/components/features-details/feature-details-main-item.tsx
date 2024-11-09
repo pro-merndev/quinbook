@@ -20,7 +20,7 @@ const FeatureDetailsMainItem: React.FC<FeatureDetailItemProps> = ({ item }) => {
   const ref = useRef(null);
   const windowWidth = useWindowWidth();
   const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 300);
+  const y = useParallax(scrollYProgress, 180);
 
   // Define breakpoint for mobile devices
   const isMobile = windowWidth < 768; // md breakpoint in Tailwind

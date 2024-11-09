@@ -19,15 +19,15 @@ const MobileNavItem: FC<MobileNavItemProps> = ({ link }) => {
   const [subMenuOpen, setSubMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  useEffect(() => {
-    if (link.items && link.items.length) {
-      link.items.forEach((item) => {
-        if (pathname === item.path) {
-          setSubMenuOpen(true);
-        }
-      });
-    }
-  }, [link.items, pathname]);
+  // useEffect(() => {
+  //   if (link.items && link.items.length) {
+  //     link.items.forEach((item) => {
+  //       if (pathname === item.path) {
+  //         setSubMenuOpen(true);
+  //       }
+  //     });
+  //   }
+  // }, [link.items, pathname]);
 
   return (
     <>
