@@ -1,5 +1,5 @@
 "use client";
-import { ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import PrimaryBadge from "../ui/primary-badge";
@@ -29,6 +29,10 @@ const Testimonials = () => {
 
   const nextSlide = () => {
     ref.current?.slickNext();
+  };
+
+  const prevSlide = () => {
+    ref.current?.slickPrev();
   };
 
   const settings = {
@@ -62,7 +66,7 @@ const Testimonials = () => {
           </h3>
         </FadeIn>
       </div>
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden max-md:pb-16">
         <div className="container mx-auto px-4">
           <FadeIn>
             <Slider {...(settings as any)} ref={ref}>
@@ -75,11 +79,18 @@ const Testimonials = () => {
           </FadeIn>
         </div>
         <button
-          className="absolute top-1/2 right-20 transform -translate-y-1/2 bg-secondary-main text-white rounded-full p-4"
+          className="absolute max-md:bottom-0 md:top-1/2 right-6 md:right-20 transform md:-translate-y-1/2 bg-secondary-main text-white rounded-full p-2 md:p-4"
           aria-label="Next slide"
           onClick={nextSlide}
         >
           <ChevronRight size={24} />
+        </button>
+        <button
+          className="md:hidden absolute max-md:bottom-0 md:top-1/2 left-6 bg-secondary-main text-white rounded-full p-2 md:p-4"
+          aria-label="Previous slide"
+          onClick={prevSlide}
+        >
+          <ChevronLeft size={24} />
         </button>
       </div>
     </div>
