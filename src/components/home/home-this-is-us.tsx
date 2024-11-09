@@ -1,5 +1,6 @@
 "use client";
 import FadeIn from "../animation/fade-in";
+import ParallaxBackground from "../animation/parallax-background";
 import PrimaryButton from "../ui/primary-button";
 
 const HomeThisIsUs = () => {
@@ -18,8 +19,8 @@ const HomeThisIsUs = () => {
   };
   return (
     <div>
-      <div className="bg-primary">
-        <div className="bg-[url('/images/home/Group_13.png')] bg-no-repeat bg-right bg-contain">
+      <div className="bg-primary overflow-hidden">
+        <ParallaxBackground>
           <div className="container py-12 lg:py-32">
             <FadeIn>
               <h5 className="font-poppins font-extrabold sm:text-8xl text-4xl mb-8 text-white text-center">Das ist quinbook</h5>
@@ -39,7 +40,7 @@ const HomeThisIsUs = () => {
               </div>
             </FadeIn>
           </div>
-        </div>
+        </ParallaxBackground>
       </div>
     </div>
   );

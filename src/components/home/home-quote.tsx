@@ -1,12 +1,13 @@
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import ParallaxBackground from "../animation/parallax-background";
 
 const HomeQuote = () => {
   const t = useTranslations("Home.quote");
   return (
-    <div className="bg-grey-main">
-      <div className="bg-[url('/images/home/Group_11.png')] bg-no-repeat bg-right">
+    <div className="bg-grey-main overflow-hidden">
+      <ParallaxBackground>
         <div className="container xl:py-14 lg:py-10 py-8  flex justify-center items-center gap-8">
           <Link href="/for-whom-quinbook" className="font-poppins font-bold xl:text-6xl sm:text-4xl text-2xl text-primary">
             {t("title")}
@@ -17,7 +18,7 @@ const HomeQuote = () => {
             </span>
           </div>
         </div>
-      </div>
+      </ParallaxBackground>
     </div>
   );
 };

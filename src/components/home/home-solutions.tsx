@@ -1,10 +1,11 @@
 import FadeIn from "../animation/fade-in";
+import ParallaxBackground from "../animation/parallax-background";
 import PrimaryButton from "../ui/primary-button";
 
 const HomeSolutions = () => {
   return (
-    <div className="bg-grey-main">
-      <div className="bg-[url('/images/home/Group_12.png')] bg-no-repeat bg-right bg-contain">
+    <div className="bg-grey-main overflow-hidden">
+      <ParallaxBackground>
         <div className="container py-12 lg:py-24">
           <FadeIn>
             <p className="font-poppins md:text-[42px] text-xl md:leading-[72px]">
@@ -21,7 +22,7 @@ const HomeSolutions = () => {
             </div>
           </FadeIn>
         </div>
-      </div>
+      </ParallaxBackground>
     </div>
   );
 };
