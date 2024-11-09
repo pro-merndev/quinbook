@@ -1,10 +1,11 @@
 import FadeIn from "../animation/fade-in";
+import ParallaxBackground from "../animation/parallax-background";
 import PrimaryBadge from "../ui/primary-badge";
 
 const ForWhomQuinbookApplications = () => {
   return (
-    <div className="bg-grey-main">
-      <div className="bg-[url('/images/home/Group_12.png')] bg-no-repeat bg-right bg-contain">
+    <div className="bg-grey-main overflow-hidden">
+      <ParallaxBackground>
         <div className="container py-12 lg:py-24">
           <FadeIn>
             <div className="flex justify-center">
@@ -28,7 +29,7 @@ const ForWhomQuinbookApplications = () => {
             </FadeIn>
           </div>
         </div>
-      </div>
+      </ParallaxBackground>
     </div>
   );
 };
