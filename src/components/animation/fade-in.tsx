@@ -1,7 +1,7 @@
 "use client";
 
-import { FC, ReactNode, useRef } from "react";
 import { motion, MotionProps, useInView } from "framer-motion";
+import { FC, ReactNode, RefObject, useRef } from "react";
 
 type FadeInProps = {
   children: ReactNode;
@@ -10,6 +10,7 @@ type FadeInProps = {
   delay?: number;
   direction?: "up" | "down" | "left" | "right";
   distance?: number;
+  sectionRef?: RefObject<HTMLDivElement>;
 };
 
 const getInitialFadeIn = (direction: "up" | "down" | "left" | "right", distance: number) => {
@@ -27,9 +28,9 @@ const getInitialFadeIn = (direction: "up" | "down" | "left" | "right", distance:
   }
 };
 
-const FadeIn: FC<FadeInProps> = ({ children, className, delay = 0, direction = "up", distance = 100, motionProps }) => {
+const FadeIn: FC<FadeInProps> = ({ children, className, delay = 0, direction = "up", distance = 100, motionProps, sectionRef }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(sectionRef ?? ref, { once: true });
   const { x, y } = getInitialFadeIn(direction, distance);
 
   return (
