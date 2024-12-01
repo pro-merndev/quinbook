@@ -18,7 +18,7 @@ const TestimonialCard = ({ testimonial }: IProps) => {
               {title}
               <span>”</span>
             </h6>
-            <p className="leading-7 line-clamp-[10]">{shortDescription}</p>
+            <p className="leading-7 line-clamp-[10]">{shortDescription}...</p>
           </div>
           <div className="mt-8 flex gap-2 items-center">
             <div>
