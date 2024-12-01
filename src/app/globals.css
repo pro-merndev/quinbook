@@ -30,3 +30,26 @@ html {
     --radius: 0.5rem;
   }
 }
+
+.tiny_scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.tiny_scrollbar::-webkit-scrollbar-track {
+  background: var(--grey-main);
+  border-radius: 8px;
+  opacity: 0;
+}
+
+.tiny_scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 8px;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.tiny_scrollbar:hover::-webkit-scrollbar-thumb {
+  background: var(--grey-darker);
+  opacity: 1;
+}

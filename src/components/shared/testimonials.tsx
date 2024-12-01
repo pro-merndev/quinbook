@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import PrimaryBadge from "../ui/primary-badge";
 import TestimonialCard from "../ui/testimonial-card";
 import FadeIn from "../animation/fade-in";
+import { testimonials } from "@/constants/testimonials";
 
 const Testimonials = () => {
   const ref = useRef<Slider>(null);
@@ -70,9 +71,9 @@ const Testimonials = () => {
         <div className="container mx-auto px-4">
           <FadeIn>
             <Slider {...(settings as any)} ref={ref}>
-              {Array.from({ length: 5 }).map((_, index) => (
+              {testimonials.map((testimonial, index) => (
                 <div className="pr-6" key={index}>
-                  <TestimonialCard />
+                  <TestimonialCard testimonial={testimonial} />
                 </div>
               ))}
             </Slider>
