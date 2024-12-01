@@ -12,11 +12,11 @@ const HomeQuote = () => {
           <Link href="/for-whom-quinbook" className="font-poppins font-bold xl:text-6xl sm:text-4xl text-2xl text-primary">
             {t("title")}
           </Link>
-          <div>
+          <Link href="/for-whom-quinbook">
             <span className="flex justify-center items-center p-3 bg-white rounded-full">
               <Image src="/logo/logo_icon.svg" alt="example-1" width={40} height={40} />
             </span>
-          </div>
+          </Link>
         </div>
       </ParallaxBackground>
     </div>
