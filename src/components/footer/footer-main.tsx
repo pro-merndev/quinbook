@@ -1,10 +1,13 @@
+import { featuresFooterLinks, navigationFooterLinks } from "@/constants/footer-links";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const FooterMain = () => {
-  const t = useTranslations("NavLink");
-  
+  const t = useTranslations();
+  const featuresT = useTranslations("Features.items");
+  const navigationLinks = navigationFooterLinks(t);
+  const featuresLinks = featuresFooterLinks(t, featuresT);
 
   return (
     <div className="bg-grey-main py-16">
@@ -16,50 +19,27 @@ const FooterMain = () => {
             </Link>
           </div>
           <div>
-            <h6 className="text-sm pb-6 font-bold text-primary uppercase">Navigation</h6>
+            <h6 className="text-sm pb-6 font-bold text-primary uppercase">{navigationLinks?.label}</h6>
             <ul className="flex flex-col gap-2">
-              <li>
-                <Link href="/">{t("home")}</Link>
-              </li>
-              <li>
-                <Link href="/pricing">{t("pricing")}</Link>
-              </li>
-              <li>
-                <Link href="/news">{t("news")}</Link>
-              </li>
-              <li>
-                <Link href="/about">{t("about")}</Link>
-              </li>
-              <li>
-                <Link href="/login">{t("login")}</Link>
-              </li>
+              {navigationLinks?.items.map((item, index) => (
+                <li key={index}>
+                  <Link href={item?.path}>{item?.label}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
-            <h6 className="text-sm pb-6 font-bold text-primary uppercase">Funktionen</h6>
+            <h6 className="text-sm pb-6 font-bold text-primary uppercase">{featuresLinks?.label}</h6>
             <ul className="flex flex-col gap-2">
-              <li>
-                <Link href="/features/experience-management">Erlebnis Management</Link>
-              </li>
-              <li>
-                <Link href="/">Buchungssystem</Link>
-              </li>
-              <li>
-                <Link href="/">Mitarbeitermanagement</Link>
-              </li>
-              <li>
-                <Link href="/">Anwendungen</Link>
-              </li>
-              <li>
-                <Link href="/features/quin-tours">QuinTours</Link>
-              </li>
-              <li>
-                <Link href="/features/quin-games">QuinGames</Link>
-              </li>
+              {featuresLinks?.items.map((item, index) => (
+                <li key={index}>
+                  <Link href={item?.path}>{item?.label}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
-            <h6 className="text-sm pb-6 font-bold text-primary uppercase">Kontakt</h6>
+            <h6 className="text-sm pb-6 font-bold text-primary uppercase">{t("Contact.badge")}</h6>
             <ul className="flex flex-col gap-2">
               <li>
                 <a href="tel:+4940228830">+49 (0)40 22883-0</a>

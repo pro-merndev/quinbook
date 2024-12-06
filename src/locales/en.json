@@ -232,5 +232,10 @@
     "subject": "Subject",
     "message": "Message",
     "btn": "Request Demo"
+  },
+  "Footer": {
+    "navigation": "Navigation",
+    "privacy_policy": "Privacy Policy",
+    "imprint": "Imprint"
   }
 }

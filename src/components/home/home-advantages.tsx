@@ -37,8 +37,8 @@ const HomeAdvantages = () => {
               key={i}
               className="h-full p-8 lg:p-12 bg-white even:bg-grey-main rounded-3xl border border-grey-main hover:bg-grey-main transition-all duration-500 "
             >
-              <h6 className="font-poppins text-2xl font-extrabold">{t(`items._${i}.title` as any)}f</h6>
-              <p className="text-xl pt-5 leading-8">{t(`items._${i}.description` as any)}f</p>
+              <h6 className="font-poppins text-2xl font-extrabold">{t(`items._${i}.title` as any)}</h6>
+              <p className="text-xl pt-5 leading-8">{t(`items._${i}.description` as any)}</p>
             </div>
           </FadeIn>
         ))}

@@ -14,7 +14,7 @@
     "learn_more": "Mehr erfahren",
     "for_whom": "Für wen quinbook?"
   },
-  "CommonSection" : {
+  "CommonSection": {
     "Features": {
       "title": "The Quinboosts",
       "items": {
@@ -37,7 +37,7 @@
         }
       }
     }
-  } ,
+  },
   "Home": {
     "banner": {
       "title": "Das All-In-One Buchungs- & Managementpaket",
@@ -69,14 +69,14 @@
         "descriptionLine2": "ECHTE Preisplanung, keine zusätzlichen Gebühren!",
         "actionText": "Demo anfordern"
       }
-    } ,
-    "example" : {
-      "badge" : "Anwendungsbeispiele" ,
-      "title" : "Für wen quinbook?", 
+    },
+    "example": {
+      "badge": "Anwendungsbeispiele",
+      "title": "Für wen quinbook?",
       "items": {
-        "_1": "Lasertag" ,
-        "_2": "Escape Rooms" ,
-        "_3": "Minigolf" ,
+        "_1": "Lasertag",
+        "_2": "Escape Rooms",
+        "_3": "Minigolf",
         "_4": "Museen, Schlösser & Naturparks"
       }
     },
@@ -232,5 +232,10 @@
     "subject": "Betreff",
     "message": "Nachricht",
     "btn": "Demo anfordern"
+  },
+  "Footer": {
+    "navigation": "Navigation",
+    "privacy_policy": "Datenschutzerklärung",
+    "imprint": "Impressum"
   }
 }
