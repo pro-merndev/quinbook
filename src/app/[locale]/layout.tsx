@@ -19,7 +19,11 @@ const poppins = Poppins({
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Quinbook",
+    title: {
+      absolute: "Quinbook",
+      default: "Quinbook",
+      template: "%s | Quinbook",
+    },
     description: "Das All-In-One Buchungs- & Managementpaket",
     openGraph: {
       title: "Quinbook",
@@ -47,7 +51,9 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale} suppressHydrationWarning={true}>
-      <body className={`${inter.variable} ${poppins.variable} antialiased font-inter bg-background text-foreground min-h-screen overflow-x-hidden`}>
+      <body
+        className={`${inter.variable} ${poppins.variable} antialiased font-inter bg-background text-foreground min-h-screen overflow-x-hidden`}
+      >
         <NextIntlClientProvider messages={messages}>
           <HomeLayout>{children}</HomeLayout>
         </NextIntlClientProvider>

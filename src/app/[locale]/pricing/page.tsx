@@ -5,6 +5,16 @@ import PricingPaymentMethods from "@/components/pricing/pricing-payment-methods"
 import PricingFeatures from "@/components/pricing/pricint-features";
 import Contact from "@/components/shared/contact";
 import VideoBanner from "@/components/shared/video-banner";
+import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+
+export const generateMetadata = async (): Promise<Metadata> => {
+  const t = await getTranslations("NavLink");
+
+  return {
+    title: t("pricing"),
+  };
+};
 
 const PricingPage = () => {
   return (
