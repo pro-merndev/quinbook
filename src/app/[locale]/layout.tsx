@@ -20,20 +20,20 @@ const poppins = Poppins({
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: {
-      absolute: "Quinbook",
-      default: "Quinbook",
-      template: "%s | Quinbook",
+      absolute: "QuinBook",
+      default: "QuinBook",
+      template: "%s | QuinBook",
     },
     description: "Das All-In-One Buchungs- & Managementpaket",
     openGraph: {
-      title: "Quinbook",
+      title: "QuinBook",
       description: "Das All-In-One Buchungs- & Managementpaket",
       type: "website",
       url: "https://quinbook.vercel.app",
       images: [
         {
           url: "https://quinbook.vercel.app/logo/logo_icon.svg",
-          alt: "Quinbook",
+          alt: "QuinBook",
         },
       ],
     },
