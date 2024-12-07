@@ -14,12 +14,12 @@ const Stepper = ({ step, totalSteps, isStepComplete }: IProps) => {
           <div
             className={cn(
               "size-12 border-2 border-primary-lighter rounded-full flex items-center justify-center text-white",
-              index + 1 === step ? "bg-primary" : index + 1 < step || isStepComplete(index + 1) ? "bg-secondary" : "bg-grey-darker"
+              index + 1 === step ? "bg-primary" : index + 1 < step || isStepComplete(index + 1) ? "bg-green-500" : "bg-grey-darker"
             )}
           >
             {index + 1 < step || isStepComplete(index + 1) ? "✓" : index + 1}
           </div>
-          {index < totalSteps - 1 && <div className={`h-[2px] flex-1 ${index + 1 < step ? "bg-secondary" : "bg-grey-darker"}`} />}
+          {index < totalSteps - 1 && <div className={`h-[2px] flex-1 ${index + 1 < step ? "bg-green-500" : "bg-grey-darker"}`} />}
         </div>
       ))}
     </div>
